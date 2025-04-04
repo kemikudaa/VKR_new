@@ -28,9 +28,6 @@ const App = () => {
                     <img src="/img/Group 4.png" alt="img_quote" className="img_quote" />
                     <p className="txt_quote">simple vision of future elements create your indiIndividuality</p>
                 </div>
-                {/* Если хочешь включить эти объекты: */}
-                {/* <img src="/img/object.png" alt="object1" className="object1" />
-                <img src="/img/object.png" alt="object2" className="object2" /> */}
                 <div className="jewerly_info">
                     <div className="group1">
                         <p className="num1">/001</p>
@@ -49,6 +46,24 @@ const App = () => {
                         <p className="jewl">CHAINS</p>
                     </div>
                 </div>
+                <div class="disc1">
+                <div class="disc11">
+                    <button class="knopka">
+                        <p class="knopka1">ПЕРЕЙТИ</p>
+                        <img src="img/Arrow 1 (2).png" alt="" class="Arrow1"/>
+                    </button>
+                    <p class="txt1">CREATIVITY.</p>
+                    <p class="txt11">у нас такой вот сайт ахуенный мы дает возможность такуюто такуют</p>
+                </div>
+            </div>
+            <div class="disc2">
+                <div class="disc12">
+                    <p class="txt2">CREATIVITY.</p>
+                    <p class="txt22">у нас такой вот сайт ахуенный мы дает возможность такуюто такуют</p>
+                </div>
+            </div>
+            <img src="img/object (3).png" alt="object1" class="object1"/>
+            <img src="img/object (1).png" alt="object2" class="object2"/>
             </div>
         </div>
     );
