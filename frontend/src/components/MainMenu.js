@@ -26,7 +26,9 @@ const App = () => {
                 <img src="/img/Remove-bg.ai_1731065735842 1.png" alt="1" className="big_img" />
                 <div className="quote">
                     <img src="/img/Group 4.png" alt="img_quote" className="img_quote" />
-                    <p className="txt_quote">simple vision of future elements create your indiIndividuality</p>
+                    <p className="txt_quote">
+                        simple vision of future elements create your indiIndividuality
+                    </p>
                 </div>
                 <div className="jewerly_info">
                     <div className="group1">
@@ -46,39 +48,127 @@ const App = () => {
                         <p className="jewl">CHAINS</p>
                     </div>
                 </div>
-                <div class="disc1">
-                <div class="disc11">
-                    <button class="knopka">
-                        <p class="knopka1">ПЕРЕЙТИ</p>
-                        <img src="img/Arrow 1 (2).png" alt="" class="Arrow1"/>
-                    </button>
-                    <p class="txt1">CREATIVITY.</p>
-                    <p class="txt11">у нас такой вот сайт ахуенный мы дает возможность такуюто такуют</p>
+                <div className="disc1">
+                    <div className="disc11">
+                        <button className="knopka">
+                            <p className="knopka1">ПЕРЕЙТИ</p>
+                            <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+                        </button>
+                        <p className="txt1">CREATIVITY.</p>
+                        <p className="txt11">
+                            у нас такой вот сайт ахуенный мы дает возможность такуюто такуют
+                        </p>
+                    </div>
+                </div>
+                <div className="disc2">
+                    <div className="disc12">
+                        <p className="txt2">CREATIVITY.</p>
+                        <p className="txt22">
+                            у нас такой вот сайт ахуенный мы дает возможность такуюто такуют
+                        </p>
+                    </div>
+                </div>
+                <img src="img/object (3).png" alt="object1" className="object1" />
+                <img src="img/object (1).png" alt="object2" className="object2" />
+            </div>
+            <div className="slide2">
+                <p className="txt_slide2">CREATIVITY.</p>
+                <p className="txt2_slide2">COLABORATION.</p>
+                <p className="txt3_slide2">OUR PHILOSOPHY</p>
+                <p className="indo1">
+                    у нас такой вот сайт классный мы дает возможность такуюто такуют
+                </p>
+                <p className="indo2">
+                    вот такие вот мы классные девочки делаем всех крутыми и облегчаем жизни
+                </p>
+                <img src="img/tl(6) 5.png" alt="" className="bubble" />
+                <img src="img/tl(6) 5.png" alt="" className="bubble1" />
+                <div className="container">
+                    <div className="line1"></div>
+                    <div className="circle"></div>
+                </div>
+                <img src="img/Group 2.png" alt="" className="img_slide2" />
+            </div>
+            <div className="slide3">
+            <p className="CATALOG">CATALOG</p>
+            <div className="catalog_box"></div>
+            <div className="line2"></div>
+            <img src="img/Remove-bg.ai_1731069429847 1.png" alt="" className="acc1" />
+            <p className="txt_slide3">
+                WITH CARING ABOUT <br />
+                YOUR <br />
+                FASHION
+            </p>
+            <div className="otdel1">
+                <p className="name">кольца</p>
+                <button className="knopka21">
+                    <p className="knopka12">ПЕРЕЙТИ</p>
+                    <img src="img/Arrow 1.png" alt="" className="Arrow1" />
+                </button>
+            </div>
+            <div className="otdel2">
+                <p className="name">серьги</p>
+                <button className="knopka2">
+                    <p className="knopka13">ПЕРЕЙТИ</p>
+                    <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+                </button>
+            </div>
+            <div className="otdel3">
+                <p className="name">серьги</p>
+                <button className="knopka2">
+                    <p className="knopka13">ПЕРЕЙТИ</p>
+                    <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+                </button>
+            </div>
+            <div className="otdel4">
+                <p className="name">серьги</p>
+                <button className="knopka2">
+                    <p className="knopka13">ПЕРЕЙТИ</p>
+                    <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+                </button>
+            </div>
+            <div className="otdel5">
+                <p className="name">серьги</p>
+                <button className="knopka2">
+                    <p className="knopka13">ПЕРЕЙТИ</p>
+                    <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+                </button>
+            </div>
+
+            <div className="line3"></div>
+            <div className="y2k">
+                <p className="ai1">“Y2K SAKHA”</p>
+                <p className="ai2">
+                    Новое поколение якутских украшений Авторские работы наших местных мастеров в современный лад
+                </p>
+            </div>
+            <button className="knopka3">
+                <p className="knopka13">ПЕРЕЙТИ</p>
+                <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+            </button>
+            <img src="img/rhb.png" alt="" className="arhb" />
+            <div className="line4"></div>
+            <button className="knopka4">
+                <p className="knopka13">ПЕРЕЙТИ</p>
+                <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+            </button>
+            <img src="img/rhb2.png" alt="" className="rhb2" />
+            <img src="img/rhb3.png" alt="" className="rhb3" />
+            <div className="line5"></div>
+            <button className="knopka5">
+                <p className="knopka13">ПЕРЕЙТИ</p>
+                <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+            </button>
+            <button className="knopka6">
+                <p className="knopka13">ПЕРЕЙТИ</p>
+                <img src="img/Arrow 1 (2).png" alt="" className="Arrow1" />
+            </button>
+            <div className="slowtxt">
+                <p className="creat">
+                    CREATORS<br /> &<br />ART
+                </p>
                 </div>
             </div>
-            <div class="disc2">
-                <div class="disc12">
-                    <p class="txt2">CREATIVITY.</p>
-                    <p class="txt22">у нас такой вот сайт ахуенный мы дает возможность такуюто такуют</p>
-                </div>
-            </div>
-            <img src="img/object (3).png" alt="object1" class="object1"/>
-            <img src="img/object (1).png" alt="object2" class="object2"/>
-            </div>
-            <div class="slide2">
-            <p class="txt_slide2">CREATIVITY.</p>
-            <p class="txt2_slide2">COLABORATION.</p>
-            <p class="txt3_slide2">OUR PHILOSOPHY</p>
-            <p class="indo1">у нас такой вот сайт классный мы дает возможность такуюто такуют</p>
-            <p class="indo2">вот такие вот мы классные девочки делаем всех крутыми и облегчаем жизни</p>
-            <img src="img/tl(6) 5.png" alt="" class="bubble"/>
-            <img src="img/tl(6) 5.png" alt="" class="bubble1"/>
-            <div class="container">
-                <div class="line1"></div>
-                <div class="circle"></div>
-            </div>
-            <img src="img/Group 2.png" alt="" class="img_slide2"/>
-    </div>
         </div>
     );
 };

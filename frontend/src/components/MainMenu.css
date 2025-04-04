@@ -499,3 +499,346 @@ body{
     margin-top: 120px;
     margin-left: 705px;
 }
+
+.slide3{
+    position: absolute;
+    margin-top: 1604px;
+    width: 100%;
+    height: 1447px;
+    background-color: #0A0A0A;
+}
+
+.CATALOG{
+    position: absolute;
+    margin-top: 64px;
+    margin-left: 1076px;
+    width: 284px;
+    height: 76px;
+    font-family: 'Jura';
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+}
+
+.catalog_box{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 80px;
+    width: 1280px;
+    height: 1187px;
+    border: 0.5px solid white;
+}
+
+.line2{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 513px;
+    height: 415px;
+    width: 0px;
+    border: 0.5px solid white;
+}
+.acc1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 385px;
+    height: 328px;
+    margin-top: 210px;
+    margin-left: 103px;
+}
+
+.txt_slide3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 276px;
+    height: 105px;
+    margin-left: 582px;
+    margin-top: 327px;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    color: #5F5F5F;
+    text-align: center;
+}
+
+.otdel1{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 927px;
+    height: 83px;
+    width: 433px;
+    border: 0.5px solid white;
+}
+.otdel2{
+    position: absolute;
+    margin-top: 263px;
+    margin-left: 927px;
+    height: 83px;
+    width: 433px;
+    border: 0.5px solid white;
+}.otdel3{
+    position: absolute;
+    margin-top: 346px;
+    margin-left: 927px;
+    height: 83px;
+    width: 433px;
+    border: 0.5px solid white;
+}.otdel4{
+    position: absolute;
+    margin-top: 429px;
+    margin-left: 927px;
+    height: 83px;
+    width: 433px;
+    border: 0.5px solid white;
+}.otdel5{
+    position: absolute;
+    margin-top: 512px;
+    margin-left: 927px;
+    height: 83px;
+    width: 433px;
+    border: 0.5px solid white;
+}
+.name{
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 20px ;
+    width: 88px;
+    height: 28px;
+    font-family: 'Jura';
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+.knopka21{
+    position: absolute;
+    width: 167px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 246px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+}
+
+.knopka12{
+    margin: 0;
+    padding: 0;
+    width: 69px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.knopka2{
+    position: absolute;
+    width: 167px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 246px;
+    margin-top: 20px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+}
+
+.knopka13{
+    margin: 0;
+    padding: 0;
+    width: 69px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.line3{
+    position: absolute;
+    margin-top: 595px;
+    margin-left: 80px;
+    height: 0px;
+    width: 1280px;
+    border: 0.5px solid white;
+}
+.y2k{
+    position: absolute;
+    margin-top: 595px;
+    margin-left: 80px;
+    width: 640px;
+    height: 382px;
+    border: 0.5px solid white;
+}
+
+.ai1{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 106px;
+    width: 339px;
+    height: 70px;
+    font-family: 'Gajraj One';
+    font-size: 48px;
+    color: white;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+
+}
+
+.ai2{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 192px;
+    width: 559px;
+    height: 84px;
+    font-family: 'Jura';
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.knopka3{
+    position: absolute;
+    width: 181px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 519px;
+    margin-top: 912px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+}
+
+.arhb{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    height: 320px;
+    margin-top: 628px;
+    margin-left: 876px;
+}
+
+.line4{
+    position: absolute;
+    margin-top: 977px;
+    margin-left: 80px;
+    height: 0px;
+    width: 1280px;
+    border: 0.5px solid white;
+}
+
+.knopka4{
+    position: absolute;
+    width: 181px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 1159px;
+    margin-top: 912px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+}
+
+.rhb2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 332px;
+    height: 415px;
+    margin-top: 967px;
+    margin-left: 120px;
+}
+.rhb3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 295px;
+    height: 252px;
+    margin-top: 1048px;
+    margin-left: 572px;
+}
+.line5{
+    position: absolute;
+    margin-top: 981px;
+    margin-left: 513px;
+    height: 386px;
+    width: 0px;
+    border: 0.5px solid white;
+}
+
+.knopka5{
+    position: absolute;
+    width: 181px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 312px;
+    margin-top: 1304px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+}
+.knopka6{
+    position: absolute;
+    width: 181px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 726px;
+    margin-top: 1304px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+}
+
+.slowtxt{
+    position: absolute;
+    margin: 0;
+    margin-top: 977px;
+    margin-left: 927px;
+    height: 390px;
+    width: 433px;
+    border: 0.5px solid white;
+}
+
+.creat{
+    position: absolute;
+    margin-top: 141px;
+    margin-left: 148px;
+    width: 137px;
+    height: 105px;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    color: #5F5F5F;
+    text-align: center;
+}
