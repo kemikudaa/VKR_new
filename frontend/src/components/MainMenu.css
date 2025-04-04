@@ -367,3 +367,135 @@ body{
     width: 40px;
     height: 10px;
 }
+.slide2{
+    position: absolute;
+    margin-top: 891px;
+    width: 100%;
+    height: 713px;
+    background-color: #0A0A0A;
+}
+
+.txt_slide2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: 493px;
+    margin-left: 80px;
+    width: 139px;
+    height: 28px;
+    font-family: 'Jura';
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.txt2_slide2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: 493px;
+    margin-left: 405px;
+    width: 190px;
+    height: 28px;
+    font-family: 'Jura';
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.indo1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: 529px;
+    margin-left: 81px;
+    width: 197px;
+    height: 76px;
+    font-family: 'Jura';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.indo2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: 529px;
+    margin-left: 406px;
+    width: 197px;
+    height: 76px;
+    font-family: 'Jura';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.txt3_slide2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: 160px;
+    margin-left: 194px;
+    width: 408px;
+    height: 152px;
+    font-family: 'Jura';
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+    
+}
+
+.bubble{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 232px;
+    height: 213px;
+    margin-top: 213px;
+    margin-left: 45px;
+}
+
+.bubble1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 154px;
+    height: 140px;
+    margin-top: 72px;
+    margin-left: 513px;
+}
+.container{
+    position: absolute;
+    width: 317px;
+    height: 100px;
+}
+.line1 {
+    position: absolute;
+    width: 317px;
+    height: 3px; 
+    margin-top: 200px;
+    margin-left: 98px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+} 
+.circle {
+    position: absolute;
+    margin-top: 193px;
+    margin-left: 88px;
+    left: 0;  
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+
+.img_slide2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 655px;
+    height: 473px;
+    margin-top: 120px;
+    margin-left: 705px;
+}
