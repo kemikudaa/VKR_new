@@ -65,6 +65,20 @@ const App = () => {
             <img src="img/object (3).png" alt="object1" class="object1"/>
             <img src="img/object (1).png" alt="object2" class="object2"/>
             </div>
+            <div class="slide2">
+            <p class="txt_slide2">CREATIVITY.</p>
+            <p class="txt2_slide2">COLABORATION.</p>
+            <p class="txt3_slide2">OUR PHILOSOPHY</p>
+            <p class="indo1">у нас такой вот сайт классный мы дает возможность такуюто такуют</p>
+            <p class="indo2">вот такие вот мы классные девочки делаем всех крутыми и облегчаем жизни</p>
+            <img src="img/tl(6) 5.png" alt="" class="bubble"/>
+            <img src="img/tl(6) 5.png" alt="" class="bubble1"/>
+            <div class="container">
+                <div class="line1"></div>
+                <div class="circle"></div>
+            </div>
+            <img src="img/Group 2.png" alt="" class="img_slide2"/>
+    </div>
         </div>
     );
 };
