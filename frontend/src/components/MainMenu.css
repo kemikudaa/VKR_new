@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)); 
+    z-index: 1; 
+}
+.logo{
+    position: absolute;
+    width: 88px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 80px;
+    color: #FFFFFF;
+}
+
+.logo_txt{
+    font-family: 'Oi';
+    font-size: 16px;
+    align-items: flex-start;
+
+}
+
+.menu{
+    position: absolute;
+    width: 553px;
+    height: 43px;
+    margin-top: 28px;
+    margin-left: 443px;
+    border: solid 0.5px white ;
+    border-radius: 80px;
+}
+
+.menu_1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 120px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+.menu_2{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 65px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 225px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+.menu_3{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 83px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 350px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+
+.log-in-author {
+    position: absolute;
+    width: 174px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-top: 29px;
+    margin-left: 1186px;
+    border: none;
+    border-radius: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+}
+
+.Author {
+    margin: 0;
+    padding: 0;
+    width: 62px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.img_line {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 10px;
+}
+
+.main_info {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 891px;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1), /* #FFFFFF (100% непрозрачности) */
+        rgba(255, 255, 255, 0.1) /* #FFFFFF (10% прозрачности) */
+    ), #0A0A0A; /* Основной фоновый цвет (60% прозрачности) */
+    background-blend-mode: overlay; /* Смешивание градиента с основным цветом */
+}
+
+.txt{
+    position: absolute;
+    width: 1060px;
+    height: 116px;
+    margin-top: 116px;
+    margin-left: 190px;
+    color: #FFFFFF;
+    font-family: "Stalinist One", serif;
+    font-size: 128px;
+}
+
+.big_img{
+    position: absolute;
+    width: 761px;
+    height: 732px;
+    margin-top: 159px;
+    margin-left: 339px;
+}
+
+.jewerly_info{
+    position: absolute;
+    width: 242px;
+    height: 164px;
+    margin-left: 80px;
+    margin-top: 389px;
+}
+.group1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 189px;
+    height: 35px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.num1{
+    width: 54px;
+    height: 35px;
+    font-family: "Gajraj One", serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.jewl{
+    width: 81px;
+    height: 35px;
+    font-family: "Gajraj One", serif;
+    font-size: 24px;
+    color: #FFFFFF;
+
+}
+
+.group2{
+    position: absolute;
+    margin: 0;
+    width: 189px;
+    height: 35px;
+    margin-top: 43px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.group3{
+    position: absolute;
+    margin: 0;
+    width: 189px;
+    height: 35px;
+    margin-top: 86px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.group4{
+    position: absolute;
+    margin: 0;
+    width: 189px;
+    height: 35px;
+    margin-top: 129px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.quote{
+    position: absolute;
+    margin: 0;
+    width: 315.91px;
+    height: 161.94px;
+    margin-top: 320px;
+    margin-left: 1044px;
+}
+
+.img_quote{
+    position: absolute;
+    width: 313px;
+    height: 162px;
+}
+
+.txt_quote{
+    position: absolute;
+    width: 249px;
+    height: 38px;
+    margin-top: 59px;
+    margin-left: 46px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+}
