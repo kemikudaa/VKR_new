@@ -1,16 +1,21 @@
 body{
     margin: 0;
     padding: 0;
-
+    width: 100%;
+    height: 4356px;
+    overflow-x: hidden;
+    overflow-y: auto; 
 }
 
+.slide1{
+    position: absolute;
+    width: 100%;
+    height: 891px;
+}
 .navbar {
     position: absolute;
     width: 100%;
     height: 100px;
-    background-color: black;
-    background: linear-gradient(to top, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)); 
-    z-index: 1; 
 }
 .logo{
     position: absolute;
@@ -122,12 +127,6 @@ body{
     padding: 0;
     width: 100%;
     height: 891px;
-    background: linear-gradient(
-        to top,
-        rgba(255, 255, 255, 1), /* #FFFFFF (100% непрозрачности) */
-        rgba(255, 255, 255, 0.1) /* #FFFFFF (10% прозрачности) */
-    ), #0A0A0A; /* Основной фоновый цвет (60% прозрачности) */
-    background-blend-mode: overlay; /* Смешивание градиента с основным цветом */
 }
 
 .txt{
@@ -547,6 +546,38 @@ body{
     margin-top: 210px;
     margin-left: 103px;
 }
+.knopka_acc1{
+    position: absolute;
+    width: 167px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 312px;
+    margin-top: 532px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+    color: #FFFFFF;
+}
+.knopka_acc1:hover{
+    border: none;
+    background-color: #ffffff;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+}
+.knopka_acc1:hover .knopka13{
+    color: black;
+}
+/* .knopka_acc1:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+  } */
 
 .txt_slide3{
     position: absolute;
@@ -610,7 +641,7 @@ body{
     font-size: 24px;
     font-weight: bold;
 }
-.knopka21{
+.knopka_rings{
     position: absolute;
     width: 167px;
     height: 43px;
@@ -618,14 +649,36 @@ body{
     padding: 0;
     margin-left: 246px;
     margin-top: 20px;
-    border: none;
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 80px;
     display: flex;
     align-items: center; 
     justify-content: space-evenly; 
-    padding: 0 20px; 
+    padding: 0 20px;    
+    border: 0.5px solid white;
 }
+
+
+.knopka_rings:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka_rings:hover .knopka13{
+    color: black;
+}
+/* .knopka_rings:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+  } */
+.knopka_earrings:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka_earrings:hover .knopka13{
+    color: black;
+}
+/* .knopka_earrings:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+  } */
 
 .knopka12{
     margin: 0;
@@ -638,7 +691,7 @@ body{
     font-weight: bold;
     padding-right: 20px;
 }
-.knopka2{
+.knopka_earrings{
     position: absolute;
     width: 167px;
     height: 43px;
@@ -666,6 +719,7 @@ body{
     font-weight: bold;
     padding-right: 20px;
 }
+
 .line3{
     position: absolute;
     margin-top: 595px;
@@ -708,7 +762,7 @@ body{
     text-align: center;
 }
 
-.knopka3{
+.knopka_y2k{
     position: absolute;
     width: 181px;
     height: 43px;
@@ -724,6 +778,18 @@ body{
     padding: 0 20px; 
     background-color: transparent;
 }
+
+.knopka_y2k:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka_y2k:hover .knopka13{
+    color: black;
+}
+/* .knopka_y2k:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+  } */
+
 
 .arhb{
     position: absolute;
@@ -820,6 +886,37 @@ body{
     padding: 0 20px; 
     background-color: transparent;
 }
+.knopka4:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka4:hover .knopka13{
+    color: black;
+}
+/* .knopka4:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+} */
+.knopka5:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka5:hover .knopka13{
+    color: black;
+}
+/* .knopka5:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+} */
+.knopka6:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka6:hover .knopka13{
+    color: black;
+}
+/* .knopka6:hover .Arrow1 {
+    content: url('/img/Arrow1.png');
+} */
+
 
 .slowtxt{
     position: absolute;
@@ -841,4 +938,318 @@ body{
     font-size: 24px;
     color: #5F5F5F;
     text-align: center;
+}
+
+.slide4{
+    position: absolute;
+    margin-top: 3051px;
+    width: 1529px;
+    height: 904px;
+    background-color: #0A0A0A;
+}
+
+.collect{
+    position: absolute;
+    width: 440px;
+    height: 76px;
+    margin-top: 64px;
+    margin-left: 80px;
+    font-family: 'Jura';
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+
+}
+
+.mini_collect{
+    position: absolute;
+    width: 211px;
+    height: 35px;
+    margin-top: 160px;
+    margin-left: 80px;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    color: #5F5F5F;
+}
+
+.collect_img{
+    position: absolute;
+    width: 413px;
+    height: 524px;
+    margin-top: 207px;
+    margin-left: 80px;
+}
+
+.info_collect{
+    position: absolute;
+    width: 196px;
+    height: 95px;
+    margin-top: 751px;
+    margin-left: 297px;
+    font-family: 'Jura';
+    font-size: 16px;
+    text-align: right;
+    color: #FFFFFF;
+
+}
+
+
+.knopka_collect{
+    position: absolute;
+    width: 183px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+    margin-top: 751px;
+    border: 0.5px solid white;
+    border-radius: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    background-color: transparent;
+}
+
+.collection1{
+    position: absolute;
+    width: 838px;
+    height: 226px;
+    margin-left: 602px;
+    margin-top: -1px;
+    border: solid 0.5px #5F5F5F ;
+
+}
+.collection1:hover{
+    background-color: #ffffff;
+}
+.collection1:hover .coll_name {
+    color: #000000;
+  }
+.collection1:hover .coll_author {
+    color: #000000;
+}
+
+.collection1:hover .name_01{
+    color: #000000;
+}
+.collection1:hover .name_02{
+    color: #000000;
+}.collection1:hover .name_03{
+    color: #000000;
+}
+
+.clas1{
+    position: absolute;
+    width: 417px;
+    height: 82px;
+    margin-top: 72px;
+    margin-left: 20px;
+}
+
+.coll_name{
+    position: absolute;
+    width: 263px;
+    height: 47px;
+    margin: 0;
+    font-family: 'Gajraj One';
+    font-size: 32px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.coll_author{
+    position: absolute;
+    width: 413px;
+    height: 38px;
+    margin-top: 44px;
+    margin-left: 4px;
+    font-family: 'Jura';
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.clas2{
+    position: absolute;
+    width: 474px;
+    height: 170px;
+    margin-left: 1055px;
+    margin-top: 28px;
+}
+.img1{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-left:453px;
+    margin-top: 28px;
+}
+.img2{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-left: 610px;
+    margin-top: 28px;
+
+}
+.img3{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-left: 767px;    
+    margin-top: 28px;
+}
+
+.name_01{
+    position: absolute;
+    margin-left: 473px;
+    margin-top: 179px;
+    width: 86px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+.name_02{
+    position: absolute;
+    margin-left: 633px;
+    margin-top: 179px;
+    width: 86px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+.name_03{
+    position: absolute;
+    margin-left: 793px;
+    margin-top: 179px;
+    width: 86px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+
+.collection2{
+    position: absolute;
+    width: 838px;
+    height: 226px;
+    margin-top: 225px;
+    margin-left: 602px;
+    border: solid 0.5px #5F5F5F ;
+
+}
+.collection2:hover{
+    background-color: #ffffff;
+}
+.collection2:hover .coll_name {
+    color: #000000;
+  }
+.collection2:hover .coll_author {
+    color: #000000;
+}
+
+.collection2:hover .name_01{
+    color: #000000;
+}
+.collection2:hover .name_02{
+    color: #000000;
+}.collection2:hover .name_03{
+    color: #000000;
+}
+
+.collection3{
+    position: absolute;
+    width: 838px;
+    height: 226px;
+    margin-left: 602px;
+    margin-top: 451px;
+    border: solid 0.5px #5F5F5F ;
+}
+.collection3:hover{
+    background-color: #ffffff;
+}
+.collection3:hover .coll_name {
+    color: #000000;
+  }
+.collection3:hover .coll_author {
+    color: #000000;
+}
+
+.collection3:hover .name_01{
+    color: #000000;
+}
+.collection3:hover .name_02{
+    color: #000000;
+}.collection3:hover .name_03{
+    color: #000000;
+}
+.collection4{
+    position: absolute;
+    width: 838px;
+    height: 226px;
+    margin-left: 602px;
+    margin-top: 677px;
+    border: solid 0.5px #5F5F5F ;
+}
+.collection4:hover{
+    background-color: #ffffff;
+}
+.collection4:hover .coll_name {
+    color: #000000;
+  }
+.collection4:hover .coll_author {
+    color: #000000;
+}
+
+.collection4:hover .name_01{
+    color: #000000;
+}
+.collection4:hover .name_02{
+    color: #000000;
+}.collection4:hover .name_03{
+    color: #000000;
+}
+.slide5{
+    position: absolute;
+    width: 100%;
+    height: 401px;
+    margin-top: 3955px;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 401px;
+}
+.copyright{
+    position: absolute;
+    width: 322px;
+    height: 76px;
+    margin-top: 139px;
+    margin-left: 559px;
+    font-family: 'Jura';
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.bg1{
+    position: absolute;
+    width: 100%;
+    height: 891px;
+}
+
+.bg3{
+    position: absolute;
+    width: 100%;
+    height: 1447px;
 }
