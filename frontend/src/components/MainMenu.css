@@ -254,29 +254,38 @@ body{
     margin-left: 1143px;
 }
 
-.disc1{
+.disc1 {
     position: absolute;
     margin: 0;
     width: 629px;
     height: 114px;
     margin-top: 741px;
     margin-left: 80px;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(17px);
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+    border: 1px solid #FFFFFF;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
 }
 
-.disc2{
+.disc2 {
     position: absolute;
     margin: 0;
     width: 629px;
     height: 114px;
     margin-top: 741px;
     margin-left: 731px;
-    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(17px);
     border-radius: 20px;
     border: 1px solid #FFFFFF;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.disc1-hover {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+    border: none !important;
 }
 
 .disc11{
@@ -288,7 +297,7 @@ body{
     margin-left: 36px;
 }
 
-.disc12{
+.disc12 {
     position: absolute;
     margin: 0;
     width: 553px;
@@ -308,7 +317,7 @@ body{
     text-decoration: underline;
 }
 
-.txt2{
+.txt2 {
     position: absolute;
     margin: 0;
     width: 185px;
@@ -318,6 +327,11 @@ body{
     font-size: 32px;
     font-weight: bold;
     text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.txt2.txt1 {
+    color: black;
 }
 
 .txt11{
@@ -327,15 +341,20 @@ body{
     color: black;
     font-size: 16px;
 }
-.txt22{
+.txt22 {
     position: absolute;
     margin-top: 55px;
     font-family: 'Jura';
     color: rgb(255, 255, 255);
     font-size: 16px;
+    transition: color 0.3s;
 }
 
-.knopka{
+.txt22.txt11 {
+    color: black;
+}
+
+.knopka {
     position: absolute;
     width: 165px;
     height: 43px;
@@ -346,9 +365,9 @@ body{
     background-color: #5F5F5F;
     border-radius: 80px;
     display: flex;
-    align-items: center; 
-    justify-content: space-evenly; 
-    padding: 0 20px; 
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
 }
 .knopka1{
     margin: 0;

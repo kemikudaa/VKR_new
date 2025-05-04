@@ -1,6 +1,8 @@
 import './MainMenu.css';
+import React, { useState } from 'react';
 
 const App = () => {
+    const [hoveredDisc, setHoveredDisc] = useState(null);
     return (
     <div>
       <div className="slide1">
@@ -52,25 +54,41 @@ const App = () => {
             </div>
           </div>
 
-          <div className="disc1">
+          <div
+            className={`disc1${hoveredDisc === 1 ? ' disc1-hover' : ''}`}
+            onMouseEnter={() => setHoveredDisc(1)}
+            onMouseLeave={() => setHoveredDisc(null)}
+            style={{ cursor: 'pointer' }}
+          >
             <div className="disc11">
-              <button className="knopka">
-                <p className="knopka1">ПЕРЕЙТИ</p>
-                <img src="img/Arrow2.png" alt="" className="Arrow1" />
-              </button>
-              <p className="txt1">CREATIVITY.</p>
-              <p className="txt11">
-                у нас такой вот сайт классный мы дает возможность такуюто
-                такуют
+              {hoveredDisc === 1 && (
+                <button className="knopka">
+                  <p className="knopka1">ПЕРЕЙТИ</p>
+                  <img src="img/Arrow2.png" alt="" className="Arrow1" />
+                </button>
+              )}
+              <p className={`txt2${hoveredDisc === 1 ? ' txt1' : ''}`}>CREATIVITY.</p>
+              <p className={`txt22${hoveredDisc === 1 ? ' txt11' : ''}`}>
+                у нас такой вот сайт классный мы дает возможность такуюто такуют
               </p>
             </div>
           </div>
-          <div className="disc2">
+          <div
+            className={`disc2${hoveredDisc === 2 ? ' disc1-hover' : ''}`}
+            onMouseEnter={() => setHoveredDisc(2)}
+            onMouseLeave={() => setHoveredDisc(null)}
+            style={{ cursor: 'pointer' }}
+          >
             <div className="disc12">
-              <p className="txt2">CREATIVITY.</p>
-              <p className="txt22">
-                у нас такой вот сайт классный мы дает возможность такуюто
-                такуют
+              {hoveredDisc === 2 && (
+                <button className="knopka">
+                  <p className="knopka1">ПЕРЕЙТИ</p>
+                  <img src="img/Arrow2.png" alt="" className="Arrow1" />
+                </button>
+              )}
+              <p className={`txt2${hoveredDisc === 2 ? ' txt1' : ''}`}>CREATIVITY.</p>
+              <p className={`txt22${hoveredDisc === 2 ? ' txt11' : ''}`}>
+                у нас такой вот сайт классный мы дает возможность такуюто такуют
               </p>
             </div>
           </div>
