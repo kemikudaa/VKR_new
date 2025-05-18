@@ -52,16 +52,16 @@ const MainMenu = () => {
                 <p className="jewl">RINGS</p>
               </div>
               <div className="group2">
-                <p className="num1">/002</p>
-                <p className="jewl">EARRINGS</p>
+                <p className="num2">/002</p>
+                <p className="jew2">EARRINGS</p>
               </div>
               <div className="group3">
-                <p className="num1">/003</p>
-                <p className="jewl">CHAINS</p>
+                <p className="num2">/003</p>
+                <p className="jew2">CHAINS</p>
               </div>
               <div className="group4">
-                <p className="num1">/004</p>
-                <p className="jewl">CHAINS</p>
+                <p className="num2">/004</p>
+                <p className="jew2">CHAINS</p>
               </div>
             </div>
 
