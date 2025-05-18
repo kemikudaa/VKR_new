@@ -1,0 +1,838 @@
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gajraj One';
+    src: url('../fonts/GajrajOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.JewelryBody * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.JewelryBody{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    height: 2137px;
+}
+.slide1{
+    position: absolute;
+    width: 100%;
+}
+
+.bg1_jewelry{
+    position: absolute;
+    width: 100%;
+    height: 2137px;
+    
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    position: absolute;
+    width: 88px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 80px;
+    color: #FFFFFF;
+}
+
+.logo_txt{
+    font-family: 'Oi';
+    font-size: 16px;
+    align-items: flex-start;
+
+}
+
+.menu{
+    position: absolute;
+    width: 553px;
+    height: 43px;
+    margin-top: 28px;
+    margin-left: 443px;
+    border: solid 0.5px white ;
+    border-radius: 80px;
+}
+
+.menu_1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 120px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+}
+.menu_2{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 65px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 225px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+
+}
+.menu_3{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 83px;
+    height: 19px;
+    margin-top: 12px;
+    margin-left: 350px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+
+}
+
+.log-in-author {
+    position: absolute;
+    width: 174px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-top: 29px;
+    margin-left: 1186px;
+    border: none;
+    border-radius: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+}
+
+.Author {
+    margin: 0;
+    padding: 0;
+    width: 62px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.img_line {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 10px;
+}
+
+.group1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.custom-rectangle-svg {
+    position: absolute;
+    margin: 0;
+    top: 120px;
+    left: 80px;
+    width: 1280px;
+    height: 139px;
+    z-index: 1;
+}
+.custom-rectangle-svg2{
+    position: absolute;
+    top: 191.46px;
+    left: 60px;
+    width: 724.5px;
+    height: 67.54px;
+    z-index: 2;
+    position: relative;
+}
+.content-inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.content-inside2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 139px;
+ 
+}
+.coll_name2 {
+    position: absolute;
+    top: 38px;
+    left: 36px;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    color: #000000;    
+}
+.coll_name_jewelry{
+    position: absolute;
+    width: 340px;
+    height: 19px;
+    top: 11px;
+    left: 16px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #5F5F5F;
+    font-weight: 300;
+}
+.coll_author_jewelry{
+    position: absolute;
+    width: 214px;
+    height: 19px;
+    top: 44px;
+    left: 1034px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #5F5F5F;
+    font-weight: bolder;
+}
+.coll_txt_jewelry{
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    top: 63px;
+    left: 853px;
+    font-family: 'Gajraj One';
+    font-size: 48px;
+    color: #5f5f5f;
+}
+
+.group4{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 540px;
+    height: 89px;
+}
+
+.NameJewelry{
+    position: absolute;
+    top: 175px;
+    left: 80px;
+    width: 540px;
+    height: 70px;
+    font-family: 'Gajraj One';
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.artic{
+    position: absolute;
+    width: 151px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    top: 245px;
+    left: 80px;
+    font-weight: 400;
+}
+
+.custom-rect3{
+    position: absolute;
+    top: 284px;
+    left: 860px;
+    width: 453px;
+    height: 541px;
+}
+
+.line{
+    position: absolute;
+    margin-top: 402px;
+    margin-left: 977px;
+    width: 236px;
+    height: 6px;
+}
+
+.content-inside3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.coll_name3{
+    position: absolute;
+    width: 351px;
+    height: 57px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color:#000000;
+    left: 117px;
+    top: 32px;
+    text-align: right;
+    font-weight: 500;
+}
+
+.coll_txt2{
+    position: absolute;
+    width: 74px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color:#000000;
+    left: 394px;
+    top: 119px;
+    text-align: right;
+    font-weight: 500;
+}
+
+.custom-rect4{
+    position: absolute;
+    top: 327px;
+    left: 924px;
+    width: 362px;
+    height: 579px;
+}
+
+.content-inside4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.coll_name4{
+    position: absolute;
+    width: 122px;
+    height: 56px;
+    font-family: 'Jura';
+    font-size: 24px;
+    color:#FFFFFF;
+    left: 110px;
+    top: 142px;
+    text-align: left;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.coll_txt4{
+    position: absolute;
+    width: 220px;
+    height: 247px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color:#FFFFFF;
+    left: 110px;
+    top: 230px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.custom-rect5{
+    position: absolute;
+    width: 27.58px;
+    height: 284px;
+    top: 616px;
+    left: 1291.88px;
+}
+
+.custom_img{
+    position: absolute;
+    width: 168px;
+    height: 227px;
+    top: 438px;
+    left: 1272px;
+}
+
+.custom_img svg {
+    position: absolute;
+    z-index: 0; 
+  }
+
+.image2jewel{
+    position: absolute;
+    width: 168px;
+    height: 227px;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+}
+.button_img {
+    position: absolute;
+    width: 23px; 
+    height: 160px; 
+    margin-top: 507px;
+    margin-left: 1262px;
+}
+
+.img_cust {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-family: 'Jura';
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    width: 153px;
+    height: 14px;
+    padding: 0;
+    margin-left: 1194px;
+    margin-top: 580px;
+    cursor: pointer;
+
+}
+
+.custom_rect6{
+    position: absolute;
+    width: 247px;
+    height: 420px;
+    margin-top: 425px;
+    margin-left: 80px;
+}
+.custom_rect7{
+    position: absolute;
+    width: 30.87px;
+    height: 25.64px;
+    margin-top: 425px;
+    margin-left: 80px;
+}
+.custom_rect8{
+    position: absolute;
+    width: 38.23px;
+    height: 151.4px;
+    margin-top: 669.19px;
+    margin-left: 80px;
+}
+
+.custom_rect9{
+    position: absolute;
+    width: 186px;
+    height: 47px;
+    margin-top: 445px;
+    margin-left: 112px;
+}
+
+.custom_img2{
+    position: absolute;
+    width: 251.93px;
+    height: 226.52px;
+    top: 681px;
+    left: 165.85px;
+}
+.custom_img2 svg {
+    position: absolute;
+    z-index: 0; 
+  }
+
+.image1jewel{
+    position: absolute;
+    width: 251.93px;
+    height: 226.52px;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+}
+.custom-rect10{
+    position: absolute;
+    width: 16.42px;
+    height: 16.03px;
+    margin-left: 400px;
+    margin-top: 889.15px;
+}
+.custom_rect11{
+    position: absolute;
+    width: 20.52px;
+    height: 107.3px;
+    margin-left: 151px;
+    margin-top: 800.22px;
+}
+
+.img_cust2{
+    position: absolute;
+    transform: rotate(-90deg);
+    font-family: 'Jura';
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+    width: 104px;
+    height: 14px;
+    padding: 0;
+    margin-left: 108px;
+    margin-top: 847.22px;
+    cursor: pointer;
+}
+
+.price_jewelry{
+    position: absolute;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 89px;
+    height: 35px;
+    padding: 0;
+    margin-left: 160px;
+    margin-top: 451px;
+}
+
+.color_jewelry{
+    position: absolute;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 97px;
+    height: 19px;
+    padding: 0;
+    margin-left: 126px;
+    margin-top: 516px;
+}
+.color-label {
+    font-weight: 700; /* Жирный текст */
+}
+
+.color-value {
+    font-weight: 300; /* Светлый текст */
+}
+
+.size_jewelry{
+    position: absolute;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 132px;
+    height: 19px;
+    padding: 0;
+    margin-left: 126px;
+    margin-top: 547px;
+}
+
+.buy{
+    position: absolute;
+    width: 184px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-top: 591px;
+    margin-left: 111px;
+    border: none;
+    border-radius: 80px;
+    background-color: white;
+}
+
+.buy1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #000000;
+    width: 57px;
+    height: 19px;
+    font-weight: 700;
+    margin-left: 39.5px;
+    margin-top: -10px;
+}
+
+.line_buy{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20.52px;
+    height: 107.3px;
+    margin-left: 104.5px;
+    margin-top: -5px;
+}
+
+.color_metall{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: 282px;
+    margin-top: 518px;
+}
+
+.jewelry_3d{
+    position: absolute;
+    width: 505.75px;
+    height: 444px;
+    left: 445px;
+    top: 413px;
+}
+
+.three_d_img{
+    position: absolute;
+    width: 505.75px;
+    height: 444px;
+    margin-left: 445.12px;
+    margin-top: 414px;
+}
+
+.alsolike{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 40px;
+    color: #FFFFFF;
+    width: 390px;
+    height: 47px;
+    font-weight: 700;
+    margin-left: 525px;
+    margin-top: 1027px;
+}
+
+.groupAlsoLike{
+    position: absolute;
+    width: 1281.53px;
+    height: 443.29px;
+    margin-left: 80px;
+    margin-top: 1094px;
+}
+
+.alsolike1{
+    position: absolute;
+    width: 305.38px;
+    height: 442.32px;
+}
+
+.alsolike2{
+    position: absolute;
+    width: 305.38px;
+    margin-left: 325.38px;
+    height: 442.32px;
+}
+.alsolike3{
+    position: absolute;
+    width: 305.38px;
+    height: 442.32px;
+    margin-left: 650.76px;
+}
+.alsolike4{
+    position: absolute;
+    margin-left: 976.14px;
+    width: 305.38px;
+    height: 442.32px;
+}
+.txt_alsolike{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 180px;
+    height: 28px;
+    font-weight: 400;
+    margin-left: 8px;
+    margin-top: 366.32px;
+}
+
+.rectangleblok{
+    position: absolute;
+    width: 305px;
+    height: 360px;
+}
+.lineblock{
+    position: absolute;
+    width: 315px;
+    height: 370.65px;
+    /* margin-left: 78px;
+    margin-top: 1092px; */
+    margin-left: -3.5px;
+    margin-top: -3px;
+
+}
+.imgalsolike{
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 77.32px;
+    width: 292px;
+    height: 207px;
+}
+
+.linealso{
+    position: absolute;
+    margin-top: 357px;
+    margin-left: -0.5px;
+}
+.pricealsolike{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 89px;
+    height: 35px;
+    font-weight: 400;
+    margin-left: 208px;
+    margin-top: 362.32px;
+}
+
+.limeline{
+    position: absolute;
+    margin-left: 197px;
+    margin-top: 360px;
+}
+
+.lineal{
+    position: absolute;
+    margin-top: 397px;
+    margin-left: -0.5px;
+}
+
+.collalsolike{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gajraj One';
+    font-size: 20px;
+    color: #5F5F5F;
+    width: 123px;
+    height: 29px;
+    font-weight: 400;
+    margin-left: 9px;
+    margin-top: 406px;
+}
+
+.buttonalsolike{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-left: 180px;
+    margin-top: 399px;
+    width: 117px;
+    height: 43px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+.lll{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #fff;
+    width: 69px;
+    height: 19px;
+    font-weight: 600;
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+.linebutton{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-left: 77px;
+    margin-top: -7px;
+
+}
+
+.buttonalsolike:hover {
+    opacity: 0.8;
+}
+
+.linebutton svg {
+    transition: transform 0.1s;
+}
+
+.see{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 24px;
+    color: #fff;
+    width: 121px;
+    height: 28px;
+    font-weight: 700;
+    margin-top: 1688px;
+    margin-left: 605px;
+}
+
+.seemoreline{
+    position: absolute;
+    margin-left: 746px;
+    margin-top: 1695px;
+}
+
+.copyrigth{
+    position: absolute;
+    margin-top: 1736px;
+    height: 401px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.txt_cop{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 64px;
+    color: #fff;
+    width: 322px;
+    height: 76px;
+    font-weight: 700;
+    margin-top: 139px;
+    margin-left: 559px;
+}

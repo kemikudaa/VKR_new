@@ -5,6 +5,7 @@ const App = () => {
     const [hoveredDisc, setHoveredDisc] = useState(null);
     return (
     <div>
+      <div className='MainMenuBody'>
       <div className="slide1">
         <img src="img/bg (3).png" alt="" className="bg1" />
         <div className="navbar">
@@ -290,6 +291,7 @@ const App = () => {
         <img src="img/bg.png" alt="" className="bg" />
         <p className="copyright">copyright</p>
       </div>
+    </div>
     </div>
   );
 };
