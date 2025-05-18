@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, useGLTF } from '@react-three/drei';
 import './JewelryViewer.css';
+import { Link } from 'react-router-dom'; 
 
 const JewelryViewer = () => {
   const { jewelryId } = useParams();
@@ -29,6 +30,13 @@ const JewelryViewer = () => {
     return <div className="loading">Loading...</div>;
   }
 
+  // const images = [
+  //   '/img/buttonImg1.png',
+  //   '/img/Group 10.png', // Добавьте другие изображения
+  //   '/img/Group 2.png',
+  // ];
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    
   return (
     <div className="JewelryBody">
       <div className="slide1">
@@ -36,8 +44,9 @@ const JewelryViewer = () => {
         <div className="navbar">
           <div className="menu">
             <button className="menu_1">О НАС</button>
-            <button className="menu_2">КАТАЛОГ</button>
-            <button className="menu_3">КОЛЛЕКЦИИ</button>
+            <Link to="/catalog">
+                <button className="menu_2">КАТАЛОГ</button>
+              </Link>            <button className="menu_3">КОЛЛЕКЦИИ</button>
           </div>
           <div className="logo">
             <p className="logo_txt">apro__ ___tag.</p>
@@ -161,9 +170,7 @@ const JewelryViewer = () => {
             </defs>
           </svg>
           <div className="content-inside3">
-            <p className="coll_name3">
-              “Вдохновленное хрустальной чистотой арктических пейзажей, это кольцо воплощает холодное великолепие зимы”
-            </p>
+            <p className="coll_name3">{jewelry.description || "Вдохновленное хрустальной чистотой арктических пейзажей, это кольцо воплощает холодное великолепие зимы"}</p>
             <p className="coll_txt2">{jewelry.author?.name || "John Doe"}</p>
           </div>
         </div>
@@ -194,7 +201,7 @@ const JewelryViewer = () => {
             <path d="M17.2917 1H1V228H160.789L169 215.661V1H72.0318L69.1645 5.30889H20.159L17.2917 1Z" fill="black" fillOpacity="0.3"/>
             <path d="M17.2917 1H1V228H160.789L169 215.661V1H72.0318L69.1645 5.30889H20.159L17.2917 1Z" stroke="white"/>
           </svg>
-          <img src="img/buttonImg1.png" alt="" class="image2jewel"/>
+          <img src="/img/buttonImg1.png" alt="button_image" className="image2jewel"/>
         </div>
         <div className="button_img">
           <svg width="23" height="160" viewBox="0 0 23 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +250,7 @@ const JewelryViewer = () => {
             <path d="M25.2846 1H0.854004V227.521H240.47L252.783 215.208V1H107.372L103.072 5.29979H29.5844L25.2846 1Z" fill="black" fillOpacity="0.3"/>
             <path d="M25.2846 1H0.854004V227.521H240.47L252.783 215.208V1H107.372L103.072 5.29979H29.5844L25.2846 1Z" stroke="white"/>
           </svg>
-          <img src="img/buttonImg2.png" alt="" class="image1jewel"/>
+          <img src="/img/buttonImg2.png" alt="button_image" className="image1jewel"/>
 
         </div>
         <div className="custom-rect10">
@@ -257,7 +264,9 @@ const JewelryViewer = () => {
           </svg>
         </div>
         <button className="img_cust2">фото_на_модели</button>
-        <p className="price_jewelry">{jewelry.price || "1800 P."}</p>
+        <p className="price_jewelry">
+          {jewelry.price ? `${jewelry.price} P.` : "1800 Р."}
+        </p>
         <p className="color_jewelry">
           <span className="color-label">Цвет:</span>
           <span className="color-value">{jewelry.color || "SILVER"}</span>

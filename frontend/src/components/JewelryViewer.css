@@ -112,6 +112,7 @@
     border: none;
     background-color: transparent;
     font-weight: 300;
+    cursor: pointer;
 }
 .menu_2{
     margin: 0;
@@ -127,6 +128,8 @@
     border: none;
     background-color: transparent;
     font-weight: 300;
+    cursor: pointer;
+
 
 }
 .menu_3{
@@ -143,6 +146,7 @@
     border: none;
     background-color: transparent;
     font-weight: 300;
+    cursor: pointer;
 
 }
 
@@ -161,6 +165,8 @@
     align-items: center; 
     justify-content: space-evenly; 
     padding: 0 20px; 
+    cursor: pointer;
+
 }
 
 .Author {
@@ -402,14 +408,12 @@
 
 .custom_img svg {
     position: absolute;
-    z-index: 0; 
   }
 
 .image2jewel{
     position: absolute;
     width: 168px;
     height: 227px;
-    z-index: 1; 
     top: 0;
     left: 0;
 }
@@ -417,8 +421,8 @@
     position: absolute;
     width: 23px; 
     height: 160px; 
-    margin-top: 507px;
-    margin-left: 1262px;
+    top: 507px;
+    left: 1262px;
 }
 
 .img_cust {
@@ -432,8 +436,8 @@
     width: 153px;
     height: 14px;
     padding: 0;
-    margin-left: 1194px;
-    margin-top: 580px;
+    left: 1194px;
+    top: 580px;
     cursor: pointer;
 
 }
@@ -442,30 +446,30 @@
     position: absolute;
     width: 247px;
     height: 420px;
-    margin-top: 425px;
-    margin-left: 80px;
+    top: 425px;
+    left: 80px;
 }
 .custom_rect7{
     position: absolute;
     width: 30.87px;
     height: 25.64px;
-    margin-top: 425px;
-    margin-left: 80px;
+    top: 425px;
+    left: 80px;
 }
 .custom_rect8{
     position: absolute;
     width: 38.23px;
     height: 151.4px;
-    margin-top: 669.19px;
-    margin-left: 80px;
+    top: 669.19px;
+    left: 80px;
 }
 
 .custom_rect9{
     position: absolute;
     width: 186px;
     height: 47px;
-    margin-top: 445px;
-    margin-left: 112px;
+    top: 445px;
+    left: 112px;
 }
 
 .custom_img2{
@@ -477,30 +481,29 @@
 }
 .custom_img2 svg {
     position: absolute;
-    z-index: 0; 
   }
 
 .image1jewel{
     position: absolute;
     width: 251.93px;
     height: 226.52px;
-    z-index: 1; 
     top: 0; 
     left: 0;
+    object-fit: contain;
 }
 .custom-rect10{
     position: absolute;
     width: 16.42px;
     height: 16.03px;
-    margin-left: 400px;
-    margin-top: 889.15px;
+    left: 401px;
+    top: 885.15px;
 }
 .custom_rect11{
     position: absolute;
     width: 20.52px;
     height: 107.3px;
-    margin-left: 151px;
-    margin-top: 800.22px;
+    left: 151px;
+    top: 800.22px;
 }
 
 .img_cust2{
@@ -524,7 +527,6 @@
     font-family: 'Gajraj One';
     font-size: 24px;
     color: #FFFFFF;
-    width: 89px;
     height: 35px;
     padding: 0;
     margin-left: 160px;
@@ -619,8 +621,8 @@
     position: absolute;
     width: 505.75px;
     height: 444px;
-    margin-left: 445.12px;
-    margin-top: 414px;
+    left: 445.12px;
+    top: 414px;
 }
 
 .alsolike{
