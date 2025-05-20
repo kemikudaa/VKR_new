@@ -325,6 +325,8 @@ body{
     height: 162px;
 }
 
+
+
 .txt_quote{
     position: absolute;
     width: 249px;
@@ -334,6 +336,7 @@ body{
     font-family: 'Jura';
     font-size: 16px;
     color: #FFFFFF;
+    font-weight: 300;
 }
 
 .object1{
@@ -536,6 +539,7 @@ body{
     font-family: 'Jura';
     color: rgb(255, 255, 255);
     font-size: 16px;
+    font-weight: 300;
 }
 .indo2{
     position: absolute;
@@ -548,6 +552,8 @@ body{
     font-family: 'Jura';
     color: rgb(255, 255, 255);
     font-size: 16px;
+    font-weight: 300;
+
 }
 
 .txt3_slide2{
@@ -588,8 +594,10 @@ body{
 }
 .container{
     position: absolute;
-    width: 317px;
-    height: 100px;
+    margin: 0;
+    padding: 0;
+    left: 60px;
+    top: 171px;
 }
 .line1 {
     position: absolute;
@@ -617,7 +625,7 @@ body{
     margin: 0;
     padding: 0;
     width: 655px;
-    height: 473px;
+    height: 514px;
     margin-top: 120px;
     margin-left: 705px;
 }
@@ -694,14 +702,19 @@ body{
     align-items: center; 
     justify-content: space-evenly; 
     padding: 0 20px; 
+    cursor: pointer;
 }
 .knopka_acc1:hover .knopka13{
     color: black;
 }
-/* .knopka_acc1:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-  } */
 
+.knopka_acc1:hover .line_button svg path {
+    fill: black;
+  }
+
+.line_button{
+    width: 40px;
+}
 .txt_slide3{
     position: absolute;
     margin: 0;
@@ -779,6 +792,7 @@ body{
     justify-content: space-evenly; 
     padding: 0 20px;    
     border: 0.5px solid white;
+    cursor: pointer;
 }
 
 
@@ -789,9 +803,9 @@ body{
 .knopka_rings:hover .knopka13{
     color: black;
 }
-/* .knopka_rings:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-  } */
+.knopka_rings:hover .line_button svg path {
+    fill: black;
+  }
 .knopka_earrings:hover{
     border: none;
     background-color: #ffffff; 
@@ -799,9 +813,9 @@ body{
 .knopka_earrings:hover .knopka13{
     color: black;
 }
-/* .knopka_earrings:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-  } */
+.knopka_earrings:hover .line_button svg path {
+    fill: black;
+  }
 
 .knopka12{
     margin: 0;
@@ -834,13 +848,14 @@ body{
 .knopka13{
     margin: 0;
     padding: 0;
-    width: 69px;
+    width: 80px;
     height: 19px;
     font-family: 'Jura';
     font-size: 16px;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 500;
     padding-right: 20px;
+
 }
 
 .line3{
@@ -900,6 +915,7 @@ body{
     justify-content: space-evenly; 
     padding: 0 20px; 
     background-color: transparent;
+    cursor: pointer;
 }
 
 .knopka_y2k:hover{
@@ -909,10 +925,9 @@ body{
 .knopka_y2k:hover .knopka13{
     color: black;
 }
-/* .knopka_y2k:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-  } */
-
+.knopka_y2k:hover .line_button svg path {
+    fill: black;
+  }
 
 .arhb{
     position: absolute;
@@ -948,6 +963,7 @@ body{
     justify-content: space-evenly; 
     padding: 0 20px; 
     background-color: transparent;
+    cursor: pointer;
 }
 
 .rhb2{
@@ -992,6 +1008,7 @@ body{
     justify-content: space-evenly; 
     padding: 0 20px; 
     background-color: transparent;
+    cursor: pointer;
 }
 .knopka6{
     position: absolute;
@@ -1008,6 +1025,7 @@ body{
     justify-content: space-evenly; 
     padding: 0 20px; 
     background-color: transparent;
+    cursor: pointer;
 }
 .knopka4:hover{
     border: none;
@@ -1016,9 +1034,9 @@ body{
 .knopka4:hover .knopka13{
     color: black;
 }
-/* .knopka4:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-} */
+.knopka4:hover .line_button svg path {
+    fill: black;
+  }
 .knopka5:hover{
     border: none;
     background-color: #ffffff; 
@@ -1026,9 +1044,9 @@ body{
 .knopka5:hover .knopka13{
     color: black;
 }
-/* .knopka5:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-} */
+.knopka5:hover .line_button svg path {
+    fill: black;
+}
 .knopka6:hover{
     border: none;
     background-color: #ffffff; 
@@ -1036,9 +1054,9 @@ body{
 .knopka6:hover .knopka13{
     color: black;
 }
-/* .knopka6:hover .Arrow1 {
-    content: url('/img/Arrow1.png');
-} */
+.knopka6:hover .line_button svg path {
+    fill: black;
+  }
 
 
 .slowtxt{
@@ -1133,7 +1151,20 @@ body{
     justify-content: space-evenly; 
     padding: 0 20px; 
     background-color: transparent;
+    cursor: pointer;
 }
+
+
+.knopka_collect:hover{
+    border: none;
+    background-color: #ffffff; 
+}
+.knopka_collect:hover .knopka13{
+    color: black;
+}
+.knopka_collect:hover .line_button svg path {
+    fill: black;
+  }
 
 .collection1{
     position: absolute;

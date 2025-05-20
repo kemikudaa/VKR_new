@@ -61,7 +61,7 @@ const MainMenu = () => {
               </div>
               <div className="group4">
                 <p className="num2">/004</p>
-                <p className="jew2">CHAINS</p>
+                <p className="jew2">OTHER</p>
               </div>
             </div>
 
@@ -122,8 +122,24 @@ const MainMenu = () => {
           <img src="img/tl(6) 5.png" alt="" className="bubble" />
           <img src="img/tl(6) 5.png" alt="" className="bubble1" />
           <div className="container">
-            <div className="line1"></div>
-            <div className="circle"></div>
+          <svg width="365" height="56" viewBox="0 0 365 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_22_17)">
+              <path d="M20 28C20 32.4183 23.5817 36 28 36C32.4183 36 36 32.4183 36 28C36 23.5817 32.4183 20 28 20C23.5817 20 20 23.5817 20 28ZM28 29.5L345 29.5L345 26.5L28 26.5L28 29.5Z" fill="white"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_22_17" x="0" y="0" width="365" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset/>
+              <feGaussianBlur stdDeviation="10"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_22_17"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_22_17" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+
           </div>
           <img src="img/Group 2.png" alt="" className="img_slide2" />
         </div>
@@ -140,7 +156,11 @@ const MainMenu = () => {
           />
           <button className="knopka_acc1">
             <p className="knopka13">ПЕРЕЙТИ</p>
-            <img src="img/Arrow2.png" alt="" className="Arrow1" />
+            <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
           </button>
           <p className="txt_slide3">
             WITH CARING ABOUT
@@ -152,35 +172,55 @@ const MainMenu = () => {
             <p className="name">кольца</p>
             <button className="knopka_rings">
               <p className="knopka13">ПЕРЕЙТИ</p>
-              <img src="img/Arrow2.png" alt="" className="Arrow1" />
+              <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
             </button>
           </div>
           <div className="otdel2">
             <p className="name">серьги</p>
             <button className="knopka_earrings">
               <p className="knopka13">ПЕРЕЙТИ</p>
-              <img src="img/Arrow2.png" alt="" className="Arrow1" />
+              <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
             </button>
           </div>
           <div className="otdel3">
             <p className="name">серьги</p>
             <button className="knopka_earrings">
               <p className="knopka13">ПЕРЕЙТИ</p>
-              <img src="img/Arrow2.png" alt="" className="Arrow1" />
+              <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
             </button>
           </div>
           <div className="otdel4">
             <p className="name">серьги</p>
             <button className="knopka_earrings">
               <p className="knopka13">ПЕРЕЙТИ</p>
-              <img src="img/Arrow2.png" alt="" className="Arrow1" />
+              <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
             </button>
           </div>
           <div className="otdel5">
             <p className="name">серьги</p>
             <button className="knopka_earrings">
               <p className="knopka13">ПЕРЕЙТИ</p>
-              <img src="img/Arrow2.png" alt="" className="Arrow1" />
+              <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
             </button>
           </div>
 
@@ -194,24 +234,40 @@ const MainMenu = () => {
           </div>
           <button className="knopka_y2k">
             <p className="knopka13">ПЕРЕЙТИ</p>
-            <img src="img/Arrow2.png" alt="" className="Arrow1" />
+            <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
           </button>
           <img src="img/rhb.png" alt="" className="arhb" />
           <div className="line4"></div>
           <button className="knopka4">
             <p className="knopka13">ПЕРЕЙТИ</p>
-            <img src="img/Arrow2.png" alt="" className="Arrow1" />
+            <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
           </button>
           <img src="img/rhb2.png" alt="" className="rhb2" />
           <img src="img/rhb3.png" alt="" className="rhb3" />
           <div className="line5"></div>
           <button className="knopka5">
             <p className="knopka13">ПЕРЕЙТИ</p>
-            <img src="img/Arrow2.png" alt="" className="Arrow1" />
+            <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
           </button>
           <button className="knopka6">
             <p className="knopka13">ПЕРЕЙТИ</p>
-            <img src="img/Arrow2.png" alt="" className="Arrow1" />
+            <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
           </button>
           <div className="slowtxt">
             <p className="creat">
@@ -233,7 +289,11 @@ const MainMenu = () => {
           </p>
           <button className="knopka_collect">
             <p className="knopka13">TRY NOW</p>
-            <img src="img/Arrow2.png" alt="" className="Arrow1" />
+            <div className='line_button'>
+              <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+              </svg>
+            </div>
           </button>
           <div className="collection1">
             <div className="clas1">
