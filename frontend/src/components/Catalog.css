@@ -1,16 +1,65 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto; 
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
 }
 
-.MainMenuBody{
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gajraj One';
+    src: url('../fonts/GajrajOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBarcode128Text';
+    src: url('../fonts/LibreBarcode128Text-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Подключение StalinistOne-Regular */
+  @font-face {
+    font-family: 'StalinistOne';
+    src: url('../fonts/StalinistOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.CatalogBody{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 4356px;
+    height: 3078px;
     overflow-x: hidden;
     overflow-y: auto; 
 }
@@ -18,6 +67,12 @@ body{
     position: absolute;
     width: 100%;
     height: 891px;
+}
+
+.bg_catalog{
+    position: absolute;
+    width: 100%;
+    height: 952px;
 }
 .navbar {
     position: absolute;
@@ -101,11 +156,12 @@ body{
     padding: 0;
     margin-top: 29px;
     margin-left: 1186px;
-    border: none;
+    border: 0.8px solid white;
+
     border-radius: 80px;
-    background-color: white;
     display: flex;
     align-items: center; 
+    background-color: transparent;
     justify-content: space-evenly; 
     padding: 0 20px; 
 }
@@ -117,313 +173,488 @@ body{
     height: 19px;
     font-family: 'Jura';
     font-size: 16px;
-    font-weight: 600;
-    color: black;
-}
-
-.img_line {
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 10px;
-}
-
-.main_info {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 891px;
-}
-
-.txt{
-    position: absolute;
-    width: 1060px;
-    height: 116px;
-    margin-top: 116px;
-    margin-left: 190px;
-    color: #FFFFFF;
-    font-family: "Stalinist One", serif;
-    font-size: 128px;
-}
-
-.big_img{
-    position: absolute;
-    width: 761px;
-    height: 732px;
-    margin-top: 159px;
-    margin-left: 339px;
-}
-
-.jewerly_info{
-    position: absolute;
-    width: 242px;
-    height: 164px;
-    margin-left: 80px;
-    margin-top: 389px;
-}
-.group1{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 189px;
-    height: 35px;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-}
-.num1{
-    width: 54px;
-    height: 35px;
-    font-family: "Gajraj One", serif;
-    font-size: 24px;
-    color: #FFFFFF;
-}
-.jewl{
-    width: 81px;
-    height: 35px;
-    font-family: "Gajraj One", serif;
-    font-size: 24px;
-    color: #FFFFFF;
-
-}
-
-.group2{
-    position: absolute;
-    margin: 0;
-    width: 189px;
-    height: 35px;
-    margin-top: 43px;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-}
-.group3{
-    position: absolute;
-    margin: 0;
-    width: 189px;
-    height: 35px;
-    margin-top: 86px;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-}
-.group4{
-    position: absolute;
-    margin: 0;
-    width: 189px;
-    height: 35px;
-    margin-top: 129px;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-}
-
-.quote{
-    position: absolute;
-    margin: 0;
-    width: 315.91px;
-    height: 161.94px;
-    margin-top: 320px;
-    margin-left: 1044px;
-}
-
-.img_quote{
-    position: absolute;
-    width: 313px;
-    height: 162px;
-}
-
-.txt_quote{
-    position: absolute;
-    width: 249px;
-    height: 38px;
-    margin-top: 59px;
-    margin-left: 46px;
-    font-family: 'Jura';
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
-.object1{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    margin-top: 550px;
-    margin-left: 1260px;
-}
-
-.object2{
-    position: absolute;
-    width: 181px;
-    height: 181px;
-    margin-top: 625px;
-    margin-left: 1143px;
-}
-
-.disc1 {
-    position: absolute;
-    margin: 0;
-    width: 629px;
-    height: 114px;
-    margin-top: 741px;
-    margin-left: 80px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(17px);
-    border-radius: 20px;
-    border: 1px solid #FFFFFF;
-    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
-}
-
-.disc2 {
-    position: absolute;
-    margin: 0;
-    width: 629px;
-    height: 114px;
-    margin-top: 741px;
-    margin-left: 731px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(17px);
-    border-radius: 20px;
-    border: 1px solid #FFFFFF;
-    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
-}
-
-.disc1-hover {
-    background-color: #fff !important;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
-    border: none !important;
-}
-
-.disc11{
-    position: absolute;
-    margin: 0;
-    width: 553px;
-    height: 74px;
-    margin-top: 20px;
-    margin-left: 36px;
-}
-
-.disc12 {
-    position: absolute;
-    margin: 0;
-    width: 553px;
-    height: 74px;
-    margin-top: 20px;
-    margin-left: 36px;
-}
-.txt1{
-    position: absolute;
-    margin: 0;
-    width: 185px;
-    height: 38px;
-    font-family: 'Jura';
-    color: black;
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.txt2 {
-    position: absolute;
-    margin: 0;
-    width: 185px;
-    height: 38px;
-    font-family: 'Jura';
+    font-weight: 400;
     color: rgb(255, 255, 255);
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: underline;
-    transition: color 0.3s;
 }
 
-.txt2.txt1 {
-    color: black;
-}
-
-.txt11{
+.Catalog_maintxt{
     position: absolute;
-    margin-top: 55px;
-    font-family: 'Jura';
-    color: black;
-    font-size: 16px;
-}
-.txt22 {
-    position: absolute;
-    margin-top: 55px;
-    font-family: 'Jura';
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.txt22.txt11 {
-    color: black;
-}
-
-.knopka {
-    position: absolute;
-    width: 165px;
-    height: 43px;
     margin: 0;
     padding: 0;
-    margin-left: 388px;
-    border: none;
-    background-color: #5F5F5F;
-    border-radius: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 2;
+    width: 788px;
+    height: 142px;
+    font-family: 'Stalinist One';
+    font-size: 96px;
+    color: rgb(255, 255, 255, 10%);
+    top: 120px;
+    left: 80px;
 }
-.knopka1{
+
+.Catalog_maintxt2{
+    position: absolute;
     margin: 0;
     padding: 0;
-    width: 69px;
+    width: 869px;
+    height: 142px;
+    font-family: 'Stalinist One';
+    font-size: 96px;
+    color: rgb(255, 255, 255, 10%);
+    top: 767px;
+    left: 491px;
+}
+
+.Catalog_maintxt3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 713px;
+    height: 142px;
+    font-family: 'Stalinist One';
+    font-size: 96px;
+    color: rgb(255, 255, 255, 10%);
+    top: 696px;
+    left: 647px;
+}
+
+.Catalog_txt{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 121px;
     height: 19px;
     font-family: 'Jura';
     font-size: 16px;
-    color: #FFFFFF;
+    font-weight: 300;
+    color: #5F5F5F;
+    top: 131px;
+    left: 80px;
 }
 
-.Arrow1{
+.catalog_img1{
+    position: absolute;
+    width: 305px;
+    height: 432px;
+    left: 839px;
+    top: 191px;
+}
+.catalog_img2{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 1164px;
+    top: 499px;
+}
+
+.catalog_img3{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 1272px;
+    top: 499px;
+}
+
+
+.catalog_img4{
+    position: absolute;
+    width: 305px;
+    height: 432px;
+    left: 80px;
+    top: 435px;
+}
+
+
+.catalog_img5{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 407px;
+    top: 435px;
+}
+
+.catalog_img6{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 515px;
+    top: 435px;
+}
+
+
+.catalog_img7{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 515px;
+    top: 191px;
+}
+
+.catalog_img9{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 623px;
+    top: 191px;
+}
+
+.catalog_img8{
+    position: absolute;
+    width: 88px;
+    height: 124px;
+    left: 731px;
+    top: 191px;
+}
+
+.Catalog_txt2{
+    position: absolute;
     margin: 0;
     padding: 0;
-    width: 40px;
-    height: 10px;
-}
-
-.slide5{
-    position: absolute;
-    width: 100%;
-    height: 401px;
-    margin-top: 3955px;
-}
-
-.bg{
-    position: absolute;
-    width: 100%;
-    height: 401px;
-}
-.copyright{
-    position: absolute;
-    width: 322px;
-    height: 76px;
-    margin-top: 139px;
-    margin-left: 559px;
+    width: 235px;
+    height: 19px;
     font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    top: 658px;
+    left: 874px;
+}
+.Catalog_txt1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 132px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    top: 631px;
+    left: 926px;
+}
+.Catalog_txt3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 132px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    top: 875px;
+    left: 167px;
+}
+.Catalog_txt4{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 235px;
+    height: 19px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    top: 902px;
+    left: 115px;
+}
+
+.Catalog_maintxt4{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 284px;
+    height: 76px;
+    font-family: 'Jura';
+    font-weight: 700;
     font-size: 64px;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+    left: 80px;
+    top: 191px;
+}
+
+.catalog_group1{
+    position: absolute;
+    width: 304px;
+    height: 123.45px;
+    left: 478px;
+    top: 542px;
+}
+
+.svg_catalog1{
+    position: absolute;
+
+}
+
+.svg_catalog2{
+    position: absolute;
+    left: 27.29px;
+}
+
+.txt_catalog_svg{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 272px;
+    height: 76px;
+    left: 16px;
+    top: 28px;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 300;
+
+}
+.catalog_group2{
+    position: absolute;
+    left: 1164px;
+    top: 371px;
+    width: 196px;
+    height: 105px;
+}
+
+.barcode1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 93px;
+    height: 40px;
+    left: 1164px;
+    top: 308px;
+    font-family: 'LibreBarcode128Text';
+    font-size: 40px;
     color: #FFFFFF;
 }
-.bg1{
+
+.barcode2{
     position: absolute;
-    width: 100%;
-    height: 891px;
+    margin: 0;
+    padding: 0;
+    width: 93px;
+    height: 40px;
+    left: 1267px;
+    top: 308px;
+    font-family: 'LibreBarcode128Text';
+    font-size: 40px;
+    color: #FFFFFF;
 }
 
-.bg3{
+.catalog_group3{
     position: absolute;
+    width: 479px;
+    height: 101px;
+    left: 881px;
+    top: 145px;
+}
+
+.svg_catalog3{
+    position: absolute;
+    top: 6px;
+    left: -1px;
+}
+
+.svg_catalog4{
+    position: absolute;
+    left: 369px;
+    top: -10px;
+}
+.svg_catalog5{
+    position: absolute;
+    left: 63px;
+    top: 21px;
+}
+
+.bubble_catalog{
+    position: absolute;
+    width: 133px;
+    height: 170px;
+    left: 0px;
+    top: 351px;
+}
+.bubble_catalog2{
+    position: absolute;
+    width: 232px;
+    height: 212px;
+    left: 1252px;
+    top: 803px;
+}
+
+.eclipse_catalog{
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    left: 71px;
+    top: 324px;
+}
+
+.svg_catalog6{
+    position: absolute;
+    width: 273.5px;
+    height: 45.28px;
+    left: 1086px;
+    top: 821px;
+}
+
+.slide2_catalog{
+    position: absolute;
+    top: 952px;
+    height: 1685px;
     width: 100%;
-    height: 1447px;
+    background-color: #000000;
+}
+
+.group_slide2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    height: 178px;
+    width: 100%;
+}
+.Vector0{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.product_search_catalog{
+    position: absolute;
+    width: 305px;
+    height: 94px;
+    left: 75px;
+    top: 42px;
+}
+
+.Vector1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 151px;
+    top: 82px;
+}
+
+.Vector2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.Vector3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 23px;
+    top: 19px;
+}
+.Vector4{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 59px;
+    top: 41px;
+}
+
+.product_search{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 28px;
+    left: 54px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product_search_txt{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 156px;
+    height: 28px;
+    top: 0px;
+    left: 2px;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+.product_search svg {
+    position: absolute;
+    left: 176px;
+    top: 7px;
+}
+
+.vector01{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 732px;
+    top: 178px;
+}
+
+.metal_color_search{
+    position: absolute;
+    width: 305px;
+    height: 94px;
+    left: 400px;
+    top: 42px;
+
+}
+
+.Vector7{
+    position: absolute;
+}
+.Vector8{
+    position: absolute;
+    left: 200px;
+    top: 45px;
+}
+
+.product_search2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 215px;
+    height: 28px;
+    left: 54px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Vector9{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 50px;
+    top: 39px;
+}
+
+.product_search_txt2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 28px;
+    top: -1px;
+    left: -9px;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+
+.product_search2 svg {
+    position: absolute;
+    left: 176px;
+    top: 7px;
+}
+
+.Vector10{
+    position: absolute;
+    top: 81px;
+    left: 5px;
 }
