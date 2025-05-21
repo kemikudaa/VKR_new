@@ -7,9 +7,6 @@ import Catalog from './components/Catalog';
 import AboutUs from './components/AboutUs';
 import Collections from './components/Collections';
 
-
-
-
 function App() {
   return (
     <Router>

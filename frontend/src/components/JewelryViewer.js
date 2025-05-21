@@ -30,31 +30,33 @@ const JewelryViewer = () => {
     return <div className="loading">Loading...</div>;
   }
 
-  // const images = [
-  //   '/img/buttonImg1.png',
-  //   '/img/Group 10.png', // Добавьте другие изображения
-  //   '/img/Group 2.png',
-  // ];
-  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    
   return (
     <div className="JewelryBody">
       <div className="slide1">
         <img src="/img/bgjewel.png" alt="Background" className="bg1_jewelry" />
         <div className="navbar">
           <div className="menu">
-            <button className="menu_1">О НАС</button>
-            <Link to="/catalog">
+              <Link to="/AboutUs">
+                <button className="menu_1">О НАС</button>
+              </Link>
+              <Link to="/catalog">
                 <button className="menu_2">КАТАЛОГ</button>
-              </Link>            <button className="menu_3">КОЛЛЕКЦИИ</button>
+              </Link>
+              <Link to="/Collections">
+                <button className="menu_3">КОЛЛЕКЦИИ</button>
+              </Link>
           </div>
           <div className="logo">
             <p className="logo_txt">apro__ ___tag.</p>
           </div>
           <button className="log-in-author">
-            <p className="Author">Я АВТОР</p>
-            <img src="/img/Arrow1.png" alt="Arrow" className="img_line" />
-          </button>
+              <p className="Author">Я АВТОР</p>
+              <div className="line_button">
+                <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="white"/>
+                </svg>
+              </div>
+            </button>
           <div className="linear-gradient"></div>
         </div>
         <div className="group1">
@@ -360,12 +362,16 @@ const JewelryViewer = () => {
             </div>
           ))}
         </div>
-        <p className="see">SEE MORE</p>
-        <div className="seemoreline">
-          <svg width="90" height="16" viewBox="0 0 90 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M89.7071 8.70711C90.0976 8.31659 90.0976 7.68343 89.7071 7.2929L83.3431 0.928939C82.9526 0.538415 82.3195 0.538415 81.9289 0.928939C81.5384 1.31946 81.5384 1.95263 81.9289 2.34315L87.5858 8.00001L81.9289 13.6569C81.5384 14.0474 81.5384 14.6806 81.9289 15.0711C82.3195 15.4616 82.9526 15.4616 83.3431 15.0711L89.7071 8.70711ZM0 8L-8.74228e-08 9L89 9.00001L89 8.00001L89 7.00001L8.74228e-08 7L0 8Z" fill="white"/>
-          </svg>
-        </div>
+
+        <button className='see_more_button'>
+          <p className="see">SEE MORE</p>
+          <div className="seemoreline">
+            <svg width="90" height="16" viewBox="0 0 90 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M89.7071 8.70711C90.0976 8.31659 90.0976 7.68343 89.7071 7.2929L83.3431 0.928939C82.9526 0.538415 82.3195 0.538415 81.9289 0.928939C81.5384 1.31946 81.5384 1.95263 81.9289 2.34315L87.5858 8.00001L81.9289 13.6569C81.5384 14.0474 81.5384 14.6806 81.9289 15.0711C82.3195 15.4616 82.9526 15.4616 83.3431 15.0711L89.7071 8.70711ZM0 8L-8.74228e-08 9L89 9.00001L89 8.00001L89 7.00001L8.74228e-08 7L0 8Z" fill="white"/>
+            </svg>
+          </div>
+        </button>
+       
         <div className="copyrigth">
           <p className="txt_cop">copyright</p>
         </div>

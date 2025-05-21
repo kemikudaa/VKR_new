@@ -497,7 +497,7 @@
 .slide2_catalog{
     position: absolute;
     top: 952px;
-    height: 1685px;
+    height: 1745px;
     width: 100%;
     background-color: #000000;
 }
@@ -590,7 +590,7 @@
     margin: 0;
     padding: 0;
     left: 732px;
-    top: 178px;
+    top: 155px;
 }
 
 .metal_color_search{
@@ -658,3 +658,126 @@
     top: 81px;
     left: 5px;
 }
+
+.author_search{
+    position: absolute;
+    left: 944px;
+    top: 37px;
+    width: 410px;
+    height: 98px;
+}
+
+.Vector11{
+    position: absolute;
+    
+}
+
+.Vector12{
+    position: absolute;
+    left: 39px;
+    top: 42px;
+}
+
+.product_search3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 28px;
+    left: 54px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.product_search3 svg {
+    position: absolute;
+    left: 192px;
+    top: 8px;
+}
+
+.product_search_txt3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 192px;
+    height: 28px;
+    top: 1px;
+    left: -16px;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.vector02{
+    position: absolute;
+    left: 1266px;
+    top: 84px;
+}
+
+
+.groupAlsoLike_container {
+    position: absolute; 
+    left: 80px;
+    top: 218px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.groupAlsoLike_catalog {
+    width: 1281.53px;
+    height: 443.29px;
+    display: flex; 
+    gap: 20px;
+}
+
+.pagination-buttons{
+    position: absolute;
+    left: 542px;
+    top: 1359px;
+    width: 196px;
+    height: 40px;
+}
+
+.prev-slide{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.next-slide{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 156px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.slide-counter {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 74px;
+    top: 5px;
+    width: 47px;
+    height: 28px;
+    color: white; 
+    font-size: 24px; 
+    font-family: 'Jura'; 
+    letter-spacing: 5px;
+  }
+
+  .slide3_catalog{
+    position: absolute;
+    width: 100%;
+    height: 401px;
+    top: 2677px;
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A0A;
+  }

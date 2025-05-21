@@ -796,25 +796,37 @@
 .linebutton svg {
     transition: transform 0.1s;
 }
-
-.see{
+.see_more_button{
     position: absolute;
+    width: 230px;
+    height: 28px;
+    left: 605px;
+    top: 1688px;
     margin: 0;
     padding: 0;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.see{
+  
     font-family: 'Jura';
     font-size: 24px;
     color: #fff;
     width: 121px;
     height: 28px;
     font-weight: 700;
-    margin-top: 1688px;
-    margin-left: 605px;
+    margin: 0;
+    padding: 0;
 }
 
 .seemoreline{
-    position: absolute;
-    margin-left: 746px;
-    margin-top: 1695px;
+ 
+    margin: 0;
+    padding: 0;
 }
 
 .copyrigth{
