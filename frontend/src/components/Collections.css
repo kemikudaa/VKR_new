@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gajraj One';
+    src: url('../fonts/GajrajOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.COllBody{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    height: 3169px;
+}
+.slide1_coll{
+    position: absolute;
+    width: 100%;
+    height: 660px;
+}
+
+.bg_coll{
+    position: absolute;
+    height: 660px;
+    width: 100%;
+}
+
+.coll_image{
+    position: absolute;
+    width: 800px;
+    height: 588px;
+    margin: 0;
+    padding: 0;
+    left: 322px;
+    top: 52px;
+}
+
+.collections_txt{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 284px;
+    height: 76px;
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 64px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+    left: 80px;
+    top: 183px;
+}
+
+.blok1_coll{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 924px;
+    top: 196px;
+}
+
+.text_to_blok1{
+    position: absolute;
+    left: 1038px;
+    top: 159px;
+    width: 118px;
+    height: 28px;
+    color: #FFFFFF;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+}
+
+.text2_to_blok1{
+    position: absolute;
+    left: 1137px;
+    top: 193px;
+    width: 129px;
+    height: 28px;
+    color: #FFFFFF;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+}
+
+.text3_to_blok1{
+    position: absolute;
+    left: 1257px;
+    top: 227px;
+    width: 118px;
+    height: 28px;
+    color: #FFFFFF;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+}
+
+.line_coll1{
+    position: absolute;
+    left: 1125px;
+    top: 349.5px;    
+}
+
+.text_coll1{
+    position: absolute;
+    left: 1133px;
+    top: 372px;
+    text-align: right;
+    color: #ffffffd8;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 300;
+    width: 228px;
+    height: 114px;
+    margin: 0;
+    padding: 0;
+}
+
+.group_coll_text1{
+    position: absolute;
+    width: 313px;
+    height: 75px;
+    top: 331px;
+    margin: 0;
+    padding: 0;
+}
+.group_coll_text2{
+    position: absolute;
+    width: 313px;
+    height: 75px;
+    top: 438px;
+    margin: 0;
+    padding: 0;
+}
+
+.text_to_group{
+    position: absolute;
+    left: 80px;
+    color: #fffffff7;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 700;
+    width: 233px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.text_to_group2{
+    position: absolute;
+    left: 80px;
+    top: 37px;
+    color: #ffffffd8;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 300;
+    width: 228px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+}
+
+.line_to_group{
+    position: absolute;
+    top: 18.5px;
+    margin: 0;
+    padding: 0;
+}
+
+.coll_object1{
+    position: absolute;
+    top: 287px;
+    left: 399px;
+    margin: 0;
+    padding: 0;
+    width: 121px;
+    height: 121px;
+}
+
+.coll_object2{
+    position: absolute;
+    top: 354px;
+    left: 926px;
+    margin: 0;
+    padding: 0;
+    width: 121px;
+    height: 121px;
+}
+
+.slide2_coll{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 660px;
+    width: 100%;
+    height: 894px;
+    background-color: #000000;
+}
+
+.vector_coll1{
+    position: absolute;
+    top: 16px;
+}
+
+.text_slide2_coll{
+    position: absolute;
+    left: 80px;
+    top: 62px;
+    color: #ffffff;
+    font-family: 'Jura';
+    font-size: 40px;
+    font-weight: 700;
+    width: 270px;
+    height: 47px;
+    margin: 0;
+    padding: 0;
+}
+
+.vector_coll2{
+    position: absolute;
+    left: 880px;
+    top: 42px;
+}
+
+.vector_coll3{
+    position: absolute;
+    left: 924px;
+    top: 77px;
+}
+
+.vector_coll4{
+    position: absolute;
+    left: 920px;
+    top: 82px;
+}
+
+.search_container{
+    position: absolute;
+    left: 951px;
+    top: 70px;
+    width: 358px;
+    height: 28px;
+   
+}
+
+.search_input{
+    width: 358px;
+    height: 28px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Jura';
+    font-size: 24px;
+    font-weight: 600;
+    color: #939393;
+    cursor: pointer;
+}
+
+.search_authors_container{
+    position: absolute;
+    top: 180px;
+    left: 80px;
+}
+
+.search_authors_total{
+    display: flex;
+    justify-content: space-between; /* Распределяет элементы равномерно */
+    margin-bottom: 16px;
+}
+.search_authors_blok1,
+.search_authors_blok2,
+.search_authors_blok3,
+.search_authors_blok4,
+.search_authors_blok5,
+.search_authors_blok6 {
+  flex: 0 0 calc(33.33% - 10px);
+}
+.search_authors_blok2,
+.search_authors_blok3,
+.search_authors_blok5,
+.search_authors_blok6 {
+    margin-left: 18px;
+}
