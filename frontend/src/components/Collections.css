@@ -47,18 +47,24 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto; 
-    height: 3169px;
+    height: auto;
 }
 .slide1_coll{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 660px;
+    margin: 0;
+    padding: 0;
 }
 
 .bg_coll{
     position: absolute;
+    top: 0;
+    left: 0;
     height: 660px;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .coll_image{
@@ -229,7 +235,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    top: 660px;
+    top: -19px;
     width: 100%;
     height: 894px;
     background-color: #000000;
