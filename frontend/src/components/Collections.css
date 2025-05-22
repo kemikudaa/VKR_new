@@ -299,29 +299,731 @@
     color: #939393;
     cursor: pointer;
 }
-
-.search_authors_container{
+.search_authors_container {
     position: absolute;
     top: 180px;
     left: 80px;
 }
 
-.search_authors_total{
+.search_authors_total {
     display: flex;
-    justify-content: space-between; /* Распределяет элементы равномерно */
+    justify-content: space-between;
     margin-bottom: 16px;
 }
+
 .search_authors_blok1,
 .search_authors_blok2,
 .search_authors_blok3,
 .search_authors_blok4,
 .search_authors_blok5,
 .search_authors_blok6 {
-  flex: 0 0 calc(33.33% - 10px);
+    flex: 0 0 calc(33.33% - 10px);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
 }
+
 .search_authors_blok2,
 .search_authors_blok3,
 .search_authors_blok5,
 .search_authors_blok6 {
     margin-left: 18px;
+}
+
+/* ИСПРАВЛЕНИЕ: Зафиксированные размеры и overflow для SVG контейнера */
+.rectangle_svg_coll {
+    width: 414px;  /* Фиксированная ширина */
+    height: 279px; /* Фиксированная высота */
+    overflow: visible; /* Позволяет тени выходить за границы */
+    position: relative;
+}
+
+/* ИСПРАВЛЕНИЕ: Позиционирование SVG с hover эффектом */
+.rectangle_svg_coll svg[width="494"] {
+    position: absolute;
+    top: -40px;  /* Компенсируем сдвиг */
+    left: -40px; /* Компенсируем сдвиг */
+}
+
+.authors_info_blok1 {
+    position: absolute;
+    width: 260.4px;
+    height: 56.49px;
+    top: 10px;
+    left: 145px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.authors_name_in_blok {
+    width: 213px;
+    height: 35px;
+    font-family: 'Stalinist One';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.authors_name_in_blok2 {
+    width: 119px;
+    height: 18px;
+    font-family: 'Stalinist One';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.authors_info_blok2 {
+    position: absolute;
+    width: 260.4px;
+    height: 56.49px;
+    top: 77px;
+    left: 145px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.authors_name_in_blok3 {
+    width: 199px;
+    height: 18px;
+    font-family: 'Stalinist One';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.authors_name_in_blok4 {
+    width: 168px;
+    height: 18px;
+    font-family: 'Stalinist One';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.authors_info_blok3 {
+    position: absolute;
+    width: 260.4px;
+    height: 123.49px;
+    top: 144px;
+    left: 145px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.authors_name_in_blok5 {
+    width: 235px;
+    height: 95px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.authors_image {
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    top: 10.5px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image_author_do {
+    margin: 0;
+    padding: 0;
+    width: 124px;
+    height: 124px;
+}
+
+.authors_image2 {
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    top: 144px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image_author_do2 {
+    margin: 0;
+    padding: 0;
+    width: 107px;
+    height: 92px;
+    margin-top: 15px;
+}
+
+.modal_overlay1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 864px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal_bg{
+    position: absolute;
+    width: 1280px;
+    height: 864px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    
+}
+
+.navbar_model{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.model_vector_img{
+    position: absolute;
+    width: 281px;
+    height: 326px;
+    margin: 0;
+    padding: 0;
+    top: 65px;
+    left: 10px;
+}
+
+.text_artist{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 234px;
+    top: 140px;
+    transform: rotate(90deg);
+    font-family: 'Gajraj One';
+    font-size: 28px;
+    color: #000000;
+}
+
+.model_vector_img2{
+    position: absolute;
+    top: 98px;
+    left: 38px;
+
+}
+
+.text_info_for_author{
+    position: absolute;
+    width: 319px;
+    height: 274px;
+    left: 361px;
+    top: 118px;
+}
+
+.text1_aa {
+    width: 213px;
+    height: 35px;
+    font-family: 'Stalinist One';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+}
+
+.text1_aa1 {
+    width: 213px;
+    height: 35px;
+    font-family: 'Stalinist One';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+.text1_aa2 {
+    width: 213px;
+    height: 35px;
+    font-family: 'Stalinist One';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-top: -13px;
+}
+
+.text1_aa3{
+    width: 319px;
+    height: 171px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+    color: #ffffff;
+}
+
+.button_close_model{
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    left: 1220px;
+    top: 12px;
+}
+
+.info_for_jewelry_model{
+    position: relative;
+    left: 720px;
+    top: 92px;
+    width: 520px;
+    height: 326px;
+}
+
+.vector_rectangle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 520px;
+    height: 326px;
+}
+
+.author_jewelry_button{
+    position: absolute;
+    width: 167px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    margin-top: 267px;
+    margin-left: 337px;
+    border: 1px solid white;
+    border-radius: 80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 20px; 
+    cursor: pointer;
+}
+
+.Author1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 16px;
+    color: #fff;
+    width: 69px;
+    height: 19px;
+    font-weight: 700;
+    padding-right: 14px;
+}
+
+.vector_for_color{
+    position: absolute;
+    left: 38px;
+    top: 83px;
+    z-index: 1000;
+}
+
+.vector_for_size{
+    position: absolute;
+    left: 394px;
+    top: 119px;
+}
+
+.vector_for_type{
+    position: absolute;
+    left: 99px;
+    top: 234px;
+}
+
+.name_for_blok{
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 600;
+    left: 30px;
+    top: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 75px;
+    margin-top: -2px;
+}
+
+.X_jewel_coll{
+    position: absolute;
+    left: 105px;
+    top: 27px;
+    width: 310px;
+    height: 272px;
+}
+
+.number_for_jewel{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 112px;
+    height: 35px;
+    color: #5F5F5F;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+}
+
+.num_for_jewel{
+    position: absolute;
+    left: 140px;
+    top: 20px;
+    width: 30px;
+    height: 35px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+}
+
+.info_for_coll_model{
+    position: absolute;
+    left: 9px;
+    top: 428px;
+    margin: 0;
+    padding: 0;
+}
+
+.info_for_coll_model2{
+    position: absolute;
+    top: 428px;
+    left: 487px;
+}
+
+.text_collect100{
+    position: absolute;
+    width: 114px;
+    height: 23px;
+    font-family: 'Gajraj One';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    left: 339px;
+    top: 483px;
+    color: #ffffff;
+
+}
+.text_collect200{
+    position: absolute;
+    width: 208px;
+    height: 41px;
+    font-family: 'Gajraj One';
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    left: 980px;
+    top: 474px;
+    color: #ffffff;
+}
+
+.block01{
+    position: absolute;
+    left: 120px;
+    top: 581px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+
+}
+.block02{
+    position: absolute;
+    left: 120px;
+    top: 616px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+
+}
+.block03{
+    position: absolute;
+    left: 120px;
+    top: 651px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+
+}
+.block04{
+    position: absolute;
+    left: 120px;
+    top: 686px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.number_block{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    font-family: 'Gajraj One';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #5F5F5F;
+}
+
+.name_block{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    font-family: 'Jura';
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-left: 43px;
+    margin-top: 6px;
+}
+
+.block01:hover .number_block,
+.block02:hover .number_block,
+.block03:hover .number_block,
+.block04:hover .number_block {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.block01:hover .name_block,
+.block02:hover .name_block,
+.block03:hover .name_block,
+.block04:hover .name_block {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.block001{
+    position: absolute;
+    left: 598px;
+    top: 581px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+.block002{
+    position: absolute;
+    left: 598px;
+    top: 616px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+.block003{
+    position: absolute;
+    left: 598px;
+    top: 651px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+.block004{
+    position: absolute;
+    left: 598px;
+    top: 686px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.block005{
+    position: absolute;
+    left: 911px;
+    top: 581px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.block006{
+    position: absolute;
+    left: 911px;
+    top: 616px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.block007{
+    position: absolute;
+    left: 911px;
+    top: 651px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+.block008{
+    position: absolute;
+    left: 911px;
+    top: 686px;
+    width: 173px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.name_block1{
+    position: absolute;
+    width: 210px;
+    height: 25px;
+    font-family: 'Jura';
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-left: 43px;
+    margin-top: 6px;
+}
+
+.block001:hover .number_block,
+.block002:hover .number_block,
+.block003:hover .number_block,
+.block005:hover .number_block,
+.block006:hover .number_block,
+.block008:hover .number_block,
+.block007:hover .number_block,
+.block004:hover .number_block {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.block001:hover .name_block1,
+.block002:hover .name_block1,
+.block003:hover .name_block1,
+.block005:hover .name_block1,
+.block006:hover .name_block1,
+.block008:hover .name_block1,
+.block007:hover .name_block1,
+.block004:hover .name_block1 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.pagination-buttons1{
+    position: absolute;
+    position: absolute;
+    left: 606px;
+    top: 790px;
+    width: 196px;
+    height: 40px;
+}
+
+.slide4_for_coll{
+    position: absolute;
+    width: 100%;
+    height: 904px;
+    left: 0;
+    top: 1535px;
+    background-color: #000000;
+}
+
+.collect1{
+    position: absolute;
+    width: 257px;
+    height: 94px;
+    left: 80px;
+    font-family: 'Jura';
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+}
+.slide5_forcoll{
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    top: 2439px;
+    left: 0;
+}
+
+.bg_slide5{
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    left: 0;
+    top: 0;
+}
+
+.for_slide5_disc{
+    position: absolute;
+    width: 807.24px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    left: 317px;
+    top: 79px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+}
+
+.text_slidde5{
+    position: absolute;
+    width: 534px;
+    height: 38px;
+    left: 36px;
+    top: 20px;
+    font-family: 'Jura';
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+    
+}
+.text2_slidde5{
+    position: absolute;
+    width: 552px;
+    height: 52px;
+    left: 36px;
+    top: 73px;
+    font-family: 'Jura';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: black;
 }
