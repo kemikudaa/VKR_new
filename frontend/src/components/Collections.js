@@ -127,17 +127,6 @@ const AuthorBlock = ({ index, isHovered, onMouseEnter, onMouseLeave, onClick }) 
 };
 
 const Modal = ({ isOpen, onClose }) => {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen]);
 
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
@@ -827,7 +816,7 @@ const Collections = () => {
           <div className='for_slide5_disc'>
             <p className='text_slidde5'>Откройте миру своё искусство</p>
             <p className='text2_slidde5'>Мы создали пространство, где ваши работы не потеряются в шуме мира. Где каждая линия, каждый изгиб, каждая вложенная вами эмоция — найдет того, кто почувствует ее сердцем.</p>
-            <button className="log-in-author">
+            <button className="log_in_author_coll">
               <p className="Author">Я АВТОР</p>
               <div className="line_button">
                 <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -837,8 +826,9 @@ const Collections = () => {
             </button>
           </div>
         </div>
-
-
+        <div className="copyrigth2">
+          <p className="txt_cop">copyright</p>
+        </div>
 
       </div>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
