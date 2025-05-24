@@ -2,6 +2,117 @@ import './LogInAuthor.css';
 import StatusComponent from './StatusComponent';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
+import { useRef } from 'react';
+
+const CustomInput = ({ label, placeholder, placeholderColor = "#999999", type = 'text', ...props }) => {
+  const [value, setValue] = useState('');
+
+  const handleChange = (val) => {
+    setValue(type === 'uppercase' ? val.toUpperCase() : val);
+  };
+
+  return (
+    <div className="input_box">
+      {label && <label className="input_label">{label}</label>}
+      <input
+        type={type}
+        className="input_style"
+        value={value}
+        onChange={(e) => handleChange(e.target.value)}
+        placeholder={placeholder}
+        {...props}
+      />
+    </div>
+  );
+};
+
+
+const ButtonGroup = () => {
+  // Изменяем состояние на массив выбранных индексов
+  const [activeButtons, setActiveButtons] = useState([]);
+
+  const buttons = ['/001_RINGS', '/002_EARRINGS', '/003_CHAINS', '/004_OTHER'];
+
+  const toggleButton = (index) => {
+    setActiveButtons(prev =>
+      prev.includes(index)
+        ? prev.filter(i => i !== index) // Удаляем индекс, если уже выбран
+        : [...prev, index] // Добавляем индекс, если не выбран
+    );
+  };
+
+  return (
+    <div className="button_group">
+      {buttons.map((button, index) => (
+        <button
+          key={index}
+          className={`button_categorie ${activeButtons.includes(index) ? 'active' : ''}`}
+          onClick={() => toggleButton(index)}
+        >
+          {button}
+        </button>
+      ))}
+    </div>
+  );
+};
+const UploadButtonGroup = () => {
+  const [activeButton, setActiveButton] = useState(null);
+  const fileInputRef = useRef(null);
+
+  const buttons = [
+    {
+      icon: <img src='/img/file_upload_icon.png' alt="file_uploading" width={20} height={24} />,
+      type: 'file'
+    },
+    {
+      icon: <img src='/img/url_upload_icon.png' alt="url_uploading" width={28} height={13} />,
+      type: 'url'
+    }
+  ];
+
+  const handleButtonClick = (index, type) => {
+    setActiveButton(index);
+    if (type === 'file') {
+      fileInputRef.current.click();
+    } else {
+      // Логика для URL загрузки
+      console.log('URL upload selected');
+      // Можно открыть модальное окно для ввода URL
+    }
+  };
+
+  const handleFileChange = (event) => {
+    const files = event.target.files;
+    if (files.length > 0) {
+      console.log('Выбранные файлы:', files);
+      // Обработка файлов
+    }
+  };
+
+  return (
+    <div className="upload_group">
+      {buttons.map((button, index) => (
+        <button
+          key={index}
+          className={`upload_categorie ${activeButton === index ? 'active' : ''}`}
+          onClick={() => handleButtonClick(index, button.type)}
+        >
+          {button.icon}
+        </button>
+      ))}
+
+      <input
+        type="file"
+        ref={fileInputRef}
+        onChange={handleFileChange}
+        style={{ display: 'none' }}
+        multiple
+      />
+    </div>
+  );
+};
 
 
 const App = () => {
@@ -74,21 +185,59 @@ const App = () => {
                   <img src="/img/loading_img.png" alt="" className="loading_img" />
                 </div>
                 <div className='author_photo'>
-                  <img src="/img/photo_frame.png" alt="" className="photo_frame"/>
+                  <img src="/img/photo_frame.png" alt="" className="photo_frame" />
                   {/* <img src="/img/bg_frame.png" alt="" className="bg_frame"/> */}
-                  
+
                 </div>
+              </div>
+              <div className='col_2'>
+                <img src="/img/profile_form.png" alt="" className="profile_form_bg" />
+                <div className='form_container'>
+                  <div style={{ width: "351px" }}><CustomInput type='text' placeholder="Фамилия Имя" /></div>
+                  <CustomInput placeholder="+7(111)222-33-44" />
+                  <CustomInput placeholder="example@mail.com" />
+                  <div className='categories_container'>
+                    <ButtonGroup />
+                  </div>
+                  <div className='upload_container'>
+                    <UploadButtonGroup />
+
+                  </div>
+                </div>
+              </div>
+
+              <div className='col_3'>
+                <img src="/img/profile_example_bg.png" alt="" className="profile_example_bg" />
+                <p className='example_txt'>EXAMPLE</p>
+                <img src="/img/example_jewelry.png" alt="" className="example_jewelry" />
               </div>
 
             </div>
 
 
-            <div className='slide3_LogInAuthor'>
-              <p className='txt_cop'>copyright</p>
+          </div>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+            <div className='send_button_container'>
+              {/* <img src="/img/send_button.png" alt="" className="send_button_bg" /> */}
+
+              <img src="/img/send_button.png" alt="Send" className='send_button_bg' />
+              <button
+                type="button"
+                aria-label="Отправить сообщение"
+                title="Кнопка отправки"
+                className="send_button"
+              >
+                ОТПРАВИТЬ
+
+              </button>
             </div>
           </div>
-        </div>
 
+
+          <img src="/img/element_2.png" alt="" className="element_2" />
+        </div>
+        <div className='slide2'>
+        </div>
       </div>
     </div>
   );
