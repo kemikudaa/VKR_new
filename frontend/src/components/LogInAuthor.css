@@ -1,0 +1,594 @@
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Light.ttf') format('truetype');
+  font-weight: 300;
+  /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Regular.ttf') format('truetype');
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Medium.ttf') format('truetype');
+  font-weight: 500;
+  /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Bold.ttf') format('truetype');
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gajraj One';
+  src: url('../fonts/GajrajOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBarcode128Text';
+  src: url('../fonts/LibreBarcode128Text-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Подключение StalinistOne-Regular */
+@font-face {
+  font-family: 'StalinistOne';
+  src: url('../fonts/StalinistOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.LogInAuthorBody {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  height: 1912px;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.slide1 {
+  /* position: absolute; */
+  flex: 1;
+  width: 100%;
+  height: 1510px;
+}
+
+.bg_LogInAuthor {
+  position: absolute;
+  width: 100%;
+  height: 1510px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  position: absolute;
+  width: 88px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 80px;
+  color: #FFFFFF;
+}
+
+.logo_txt {
+  font-family: 'Oi';
+  font-size: 16px;
+  align-items: flex-start;
+
+}
+
+.menu {
+  position: absolute;
+  width: 553px;
+  height: 43px;
+  margin-top: 28px;
+  margin-left: 443px;
+  border: solid 0.5px white;
+  border-radius: 80px;
+}
+
+.menu_1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 45px;
+  height: 19px;
+  margin-top: 12px;
+  margin-left: 120px;
+  font-family: 'Jura';
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  background-color: transparent;
+}
+
+.menu_2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 65px;
+  height: 19px;
+  margin-top: 12px;
+  margin-left: 225px;
+  font-family: 'Jura';
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  background-color: transparent;
+}
+
+.menu_3 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 83px;
+  height: 19px;
+  margin-top: 12px;
+  margin-left: 350px;
+  font-family: 'Jura';
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  background-color: transparent;
+}
+
+.log-in-author {
+  position: absolute;
+  width: 174px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  margin-top: 29px;
+  margin-left: 1186px;
+  border: 0.8px solid white;
+
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.Author {
+  margin: 0;
+  padding: 0;
+  width: 62px;
+  height: 19px;
+  font-family: 'Jura';
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.LogInAuthor_txt {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura';
+  font-size: 16px;
+  font-weight: 300;
+  color: #5F5F5F;
+  top: 131px;
+  left: 80px;
+}
+
+.slide2 {
+  flex: 2;
+  
+  width: 100%;
+  height: 401px;
+  top: 1510px;
+  /* margin-top: 1510px; */
+  margin: 0;
+  padding: 0;
+  background-color: #0A0A0A;
+}
+
+
+
+.element_1 {
+  position: absolute;
+  width: 808px;
+  height: 24px;
+  left: 552px;
+  top: 132px;
+}
+
+.element_welcome {
+  flex: 2;
+  width: 630px;
+}
+
+.title {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura';
+  font-weight: 700;
+  font-size: 64px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255);
+  width: 537px;
+}
+
+.subtitle {
+  flex: 2;
+  margin: 0;
+  padding: 0;
+  width: 433px;
+  font-family: 'Jura';
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.main-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 183px;
+  padding-left: 80px;
+  padding-right: 80px;
+  flex: 1;
+  gap: 113px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile_div {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.profile_bg {
+  position: absolute;
+  width: 1320px;
+}
+
+.profile_content {
+  display: flex;
+  position: relative;
+  margin-left: 80px;
+  margin-right: 80px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 164px;
+}
+
+.status_container {
+  position: relative;
+  margin-left: 89px;
+  width: 281px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.status_bg {
+  position: absolute;
+  width: 281px;
+}
+
+.status_txt {
+  flex: 1;
+  margin: 4px;
+  margin-right: 8px;
+  padding: 0;
+  width: 93px;
+  font-family: 'Jura';
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 700;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.checklist_container {
+  flex: 2;
+  z-index: 1;
+  margin-top: 91px;
+  border: #0A0A0A;
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  gap: 32px;
+}
+
+.checklist_row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.rhomb {
+  width: 14px;
+  height: 16px;
+}
+
+.checklist_txt {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura';
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.loading_img {
+  flex: 3;
+  z-index: 1;
+  margin: 8px;
+  margin-top: 44px;
+}
+
+.col_1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.author_photo {
+  flex: 2;
+  display: flex;
+}
+
+.photo_frame {
+  position: absolute;
+  width: 340px;
+  margin-left: 59px;
+  margin-top: -10px;
+}
+
+/* .bg_frame{
+  position: relative;
+  width: 228px;
+  border: #FFFFFF;
+} */
+
+.profile_form_bg {
+  position: absolute;
+  width: 480px;
+}
+
+.col_2 {
+  flex: 2;
+  width: 480px;
+  margin-top: 90px;
+  margin-left: 12px;
+}
+
+.form_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 144px; */
+  border: #0A0A0A;
+  z-index: 1;
+  margin-top: 54px;
+  margin-left: 32px;
+  gap: 52px;
+  width: 433px;
+}
+
+.input_box {
+  margin-bottom: 1rem;
+}
+
+.input_label {
+  font-family: 'Jura';
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 700;
+  position: absolute;
+}
+
+.input_style {
+  border: none;
+  /* Убираем все границы */
+  border-bottom: 2px dashed #FFFFFF;
+  /* Только нижняя пунктирная */
+  padding: 4px 0;
+  /* Уменьшаем padding для компактности */
+  background: transparent;
+  /* Прозрачный фон */
+  width: 100%;
+  font-family: 'Jura';
+  font-size: 24px;
+  font-weight: 700;
+  height: 28px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.categories_container {}
+
+.button_group {}
+
+.button_categorie {
+  all: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  padding: 2px 8px 2px 8px;
+  background-color: #5F5F5F;
+  color: #FFFFFF;
+  font-family: 'Gajraj One';
+  font-size: 24px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  box-shadow: -4px 4px 30px 0px rgba(255, 255, 255, 0.4) inset,
+    -4px -4px 20px 0px rgba(0, 0, 0, 0.4) inset,
+    0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button_categorie.active {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.37);
+}
+
+.upload_group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.upload_categorie {
+  all: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #5F5F5F;
+  color: #FFFFFF;
+
+  border-radius: 100%;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  box-shadow: -4px 4px 30px 0px rgba(255, 255, 255, 0.4) inset,
+    -4px -4px 20px 0px rgba(0, 0, 0, 0.4) inset,
+    0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.upload_categorie.active {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.37);
+}
+
+.col_3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-top: 90px;
+  margin-left: 26px;
+  margin-right: 82px;
+  width: 309px;
+  height: 645px;
+}
+
+.profile_example_bg {
+  position: absolute;
+  width: 100%;
+  height: 645px;
+}
+
+.example_txt {
+  margin: 4px;
+  margin-right: 16px;
+  padding: 0;
+  width: 100px;
+  font-family: 'Jura';
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 700;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.example_jewelry {
+  z-index: 1;
+  width: 259px;
+  align-self: center;
+  margin-top: 160px;
+}
+
+.send_button_container {
+  width: 411px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 72px;
+  margin-top: 20px;
+}
+
+.send_button_bg {
+  width: 411px;
+  position: absolute;
+
+}
+
+.send_button {
+  all: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Jura';
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+  
+}
+
+.send_button:hover {
+  text-shadow: 0 0 20px #FFFFFF;
+
+}
+
+.send_button:active {
+  text-shadow: 0 0 40px #FFFFFF;
+
+}
+
+.element_2{
+  position: relative;
+  width: 808px;
+  height: 24px;
+  left: 80px;
+  top: 87px;
+}
+
