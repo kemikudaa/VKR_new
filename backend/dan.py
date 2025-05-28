@@ -59,3 +59,5 @@ class JewelryRead(JewelryCreate):
 
     class Config:
         orm_mode = True
+
+
