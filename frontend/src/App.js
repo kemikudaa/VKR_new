@@ -6,6 +6,7 @@ import MainMenu from './components/MainMenu';
 import Catalog from './components/Catalog';
 import AboutUs from './components/AboutUs';
 import Collections from './components/Collections';
+import LogInAuthor from './components/LogInAuthor';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Catalog" element={<Catalog />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Collections" element={<Collections />} />
+        <Route path="/LogInAuthor" element={<LogInAuthor />} />
       </Routes>
     </Router>
   );
