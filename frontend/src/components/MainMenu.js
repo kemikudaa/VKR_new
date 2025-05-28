@@ -8,7 +8,7 @@ const MainMenu = () => {
   return (
     <div>
       <div className="MainMenuBody">
-        <div className="slide1">
+        <div className="slide1_mainmenu">
           <img src="img/bg (3).png" alt="" className="bg1" />
           <div className="navbar">
             <div className="menu">
@@ -113,7 +113,7 @@ const MainMenu = () => {
           </div>
         </div>
 
-        <div className="slide2">
+        <div className="slide2_mainmenu">
           <p className="txt_slide2">CREATIVITY.</p>
           <p className="txt2_slide2">COLABORATION.</p>
           <p className="txt3_slide2">OUR PHILOSOPHY</p>
