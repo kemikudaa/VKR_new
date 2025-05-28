@@ -120,7 +120,7 @@ const App = () => {
   return (
     <div>
       <div className="LogInAuthorBody">
-        <div className="slide1">
+        <div className="slide_1">
           <img src="/img/bg_loginauthor.png" alt="" className="bg_LogInAuthor" />
           <div className="navbar">
             <div className="menu">

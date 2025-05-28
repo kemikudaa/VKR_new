@@ -64,7 +64,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 891px;
+    /* height: 891px; */
 }
 .slide1{
     position: absolute;
@@ -497,7 +497,7 @@ body{
 }
 .slide2{
     position: absolute;
-    margin-top: 891px;
+    margin-top: 791px;
     width: 100%;
     height: 713px;
     background-color: #0A0A0A;
