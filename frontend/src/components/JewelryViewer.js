@@ -311,9 +311,13 @@ const JewelryViewer = () => {
         <div className="jewelry_3d">
           {jewelry.three_d_file ? (
             <Canvas style={{ width: '505.75px', height: '444px' }}>
-              <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={45} />
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[5, 5, 5]} intensity={1.5} />
+              <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} /> {/* для колец 10 */}
+              <ambientLight intensity={1.0} color="white" />
+              <directionalLight position={[5, 5, 5]} intensity={2} color="white" />
+              <directionalLight position={[-5, -5, 5]} intensity={1} color="white" />
+              <directionalLight position={[0, 10, 0]} intensity={1.5} color="white" />
+              <pointLight position={[2, 2, 2]} intensity={1} color="white" />
+              <pointLight position={[-2, -2, 2]} intensity={1} color="white" />              
               <OrbitControls minDistance={2} maxDistance={10} />
               <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
             </Canvas>
