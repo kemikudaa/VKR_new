@@ -82,7 +82,7 @@ const JewelryViewer = () => {
             <div className="content-inside">
               <p className="coll_name_jewelry">HOME / 002_EARRINGS / {jewelry.name || "JEWELRY"}</p>
               <p className="coll_author_jewelry">COLLECTION BY {jewelry.author?.name || "AUTHOR"}</p>
-              <p className="coll_txt_jewelry">"{jewelry.collection || "COLLECTION"}"</p>
+              <p className="coll_txt_jewelry">"{jewelry.collection?.name || "COLLECTION"}"</p>
             </div>
           </div>
           <div className="custom-rectangle-svg2">
@@ -111,7 +111,7 @@ const JewelryViewer = () => {
         </div>
         <div className="group4">
           <p className="NameJewelry">{jewelry.name || "Number One earring"}</p>
-          <p className="artic">артикул_ID: {jewelry.artic || "3757874"}</p>
+          <p className="artic">артикул_ID: {jewelry.sku || "3757874"}</p>
         </div>
         <div className="custom-rect4">
           <svg width="362" height="579" viewBox="0 0 362 579" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,15 +267,19 @@ const JewelryViewer = () => {
         </div>
         <button className="img_cust2">фото_на_модели</button>
         <p className="price_jewelry">
-          {jewelry.price ? `${jewelry.price} P.` : "1800 Р."}
+          {jewelry.price ? `${jewelry.price} Р.` : "1800 Р."}
         </p>
         <p className="color_jewelry">
-          <span className="color-label">Цвет:</span>
-          <span className="color-value">{jewelry.color || "SILVER"}</span>
+          <span className="color-label">Материал:</span>
+          <span className="color-value">{
+            jewelry.materials && jewelry.materials.length > 0 
+              ? jewelry.materials.map(m => m.name).join(', ')
+              : "SILVER"
+          }</span>
         </p>
         <p className="size_jewelry">
           <span className="color-label">Размер:</span>
-          <span className="color-value">{jewelry.size || "one size"}</span>
+          <span className="color-value">{jewelry.dimensions || "one size"}</span>
         </p>
         <button className="buy">
           <p className="buy1">КУПИТЬ</p>
@@ -307,9 +311,13 @@ const JewelryViewer = () => {
         <div className="jewelry_3d">
           {jewelry.three_d_file ? (
             <Canvas style={{ width: '505.75px', height: '444px' }}>
-              <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={45} />
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[5, 5, 5]} intensity={1.5} />
+              <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} /> {/* для колец 10 */}
+              <ambientLight intensity={1.0} color="white" />
+              <directionalLight position={[5, 5, 5]} intensity={2} color="white" />
+              <directionalLight position={[-5, -5, 5]} intensity={1} color="white" />
+              <directionalLight position={[0, 10, 0]} intensity={1.5} color="white" />
+              <pointLight position={[2, 2, 2]} intensity={1} color="white" />
+              <pointLight position={[-2, -2, 2]} intensity={1} color="white" />              
               <OrbitControls minDistance={2} maxDistance={10} />
               <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
             </Canvas>

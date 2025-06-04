@@ -59,14 +59,14 @@ body{
     overflow-x: hidden;
     overflow-y: auto; 
 }
-.slide1{
+.slide1_mainmenu{
     position: absolute;
     margin: 0;
     padding: 0;
     width: 100%;
     /* height: 891px; */
 }
-.slide1{
+.slide1_mainmenu{
     position: absolute;
     width: 100%;
 }
@@ -495,7 +495,7 @@ body{
     width: 40px;
     height: 10px;
 }
-.slide2{
+.slide2_mainmenu{
     position: absolute;
     margin-top: 791px;
     width: 100%;
