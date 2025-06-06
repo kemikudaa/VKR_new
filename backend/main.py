@@ -29,7 +29,7 @@ app.add_middleware(
 )
 
 app.mount("/models", StaticFiles(directory="models"), name="models")
-app.mount("/images", StaticFiles(directory="images"), name="images")
+# app.mount("/images", StaticFiles(directory="images"), name="images")
 
 @app.get("/")
 def read_root():
