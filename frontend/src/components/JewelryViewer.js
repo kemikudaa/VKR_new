@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
-import Axios from 'axios';
+// import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, useGLTF } from '@react-three/drei';
@@ -11,15 +11,19 @@ const JewelryViewer = ({ lang = 'ru' }) => {
   const [jewelry, setJewelry] = useState(null);
 
   useEffect(() => {
-    Axios.get(`http://127.0.0.1:8000/jewelries/${jewelryId}`)
-      .then(response => {
+    setLoading(true);
+    axios
+      .get(`http://127.0.0.1:8000/jewelries/${jewelryId}`)
+      .then((response) => {
         setJewelry(response.data);
+        setLoading(false);
       })
-      .catch(error => {
-        console.error('Error loading jewelry:', error);
-        alert(lang === 'en' ? 'Failed to load jewelry. Please try again later.' : 'Не удалось загрузить украшение. Пожалуйста, попробуйте позже.');
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+        alert('Не удалось загрузить украшение. Пожалуйста, попробуйте позже.');
       });
-  }, [jewelryId, lang]);
+  }, [jewelryId]);
 
   const Model = ({ fileUrl }) => {
     const { scene } = useGLTF(fileUrl);
@@ -253,7 +257,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
           <div className="content-inside4">
             <p className="coll_name4">{lang === 'en' ? 'Item Description:' : 'Описание изделия:'}</p>
             <p className="coll_txt4">
-              {lang === 'en' ? 
+              {lang === 'en' ?
                 'Metal: blackened 925 sterling silver with matte polish Inserts: transparent crystals with a "frozen glass" effect or cold sapphires Features: asymmetrical elements resembling chipped ice' :
                 'Металл: черненое серебро 925 пробы с матовой полировкой Вставки: прозрачные кристаллы с эффектом «замерзшего стекла» или холодные сапфиры Особенности: асимметричные элементы, напоминающие сколотый лед'}
             </p>
@@ -423,21 +427,21 @@ const JewelryViewer = ({ lang = 'ru' }) => {
         </div>
         <div className="jewelry_3d">
           {/* <Suspense fallback={<div className="text-center py-10">Загрузка 3D-модели...</div>}> */}
-            {jewelry.three_d_file ? (
-              <Canvas style={{ width: '505.75px', height: '444px' }}>
-                <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} /> {/* для колец 10 */}
-                <ambientLight intensity={1.0} color="white" />
-                <directionalLight position={[5, 5, 5]} intensity={2} color="white" />
-                <directionalLight position={[-5, -5, 5]} intensity={1} color="white" />
-                <directionalLight position={[0, 10, 0]} intensity={1.5} color="white" />
-                <pointLight position={[2, 2, 2]} intensity={1} color="white" />
-                <pointLight position={[-2, -2, 2]} intensity={1} color="white" />
-                <OrbitControls minDistance={2} maxDistance={10} />
-                <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
-              </Canvas>
-            ) : (
-              <img src="/img/SnapBG.ai_1745139437294 1.png" alt={jewelry.name} className="three_d_img" loading="lazy" />
-            )}
+          {jewelry.three_d_file ? (
+            <Canvas style={{ width: '505.75px', height: '444px' }} data-testid="canvas-mock">
+              <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} />
+              <ambientLight intensity={1.0} color="white" />
+              <directionalLight position={[5, 5, 5]} intensity={2} color="white" />
+              <directionalLight position={[-5, -5, 5]} intensity={1} color="white" />
+              <directionalLight position={[0, 10, 0]} intensity={1.5} color="white" />
+              <pointLight position={[2, 2, 2]} intensity={1} color="white" />
+              <pointLight position={[-2, -2, 2]} intensity={1} color="white" />
+              <OrbitControls minDistance={2} maxDistance={10} />
+              <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
+            </Canvas>
+          ) : (
+            <img src="/img/SnapBG.ai_1745139437294 1.png" alt={jewelry.name} className="three_d_img" loading="lazy" />
+          )}
           {/* </Suspense> */}
         </div>
         <p className="alsolike">YOU MAY ALSO LIKE</p>

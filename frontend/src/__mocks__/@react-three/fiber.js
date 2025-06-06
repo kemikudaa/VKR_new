@@ -1,0 +1,1 @@
+export const Canvas = jest.fn(({ children }) => <div>{children}</div>);

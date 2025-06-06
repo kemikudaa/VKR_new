@@ -1,8 +1,16 @@
+// src/__tests__/App.test.js
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import App from '../App';
+import axios from 'axios';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('axios');
+
+test('renders App component', () => {
+  render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+  expect(screen.getByText(/APROTAG/i)).toBeInTheDocument();
 });

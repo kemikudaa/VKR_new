@@ -108,25 +108,25 @@ const MainMenu = ({ lang = 'ru' }) => {
           </div>
           <div className="hidden md:flex space-x-16 border border-white rounded-full px-6 py-2">
             <Link to={lang === 'en' ? '/en/AboutUs' : '/AboutUs'}>
-              <button className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
+              <button data-testid="nav-about-us" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
             </Link>
             <Link to={lang === 'en' ? '/en/Catalog' : '/Catalog'}>
-              <button className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
+              <button data-testid="nav-catalog" className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
             </Link>
             <Link to={lang === 'en' ? '/en/Collections' : '/Collections'}>
-              <button className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
+              <button data-testid="nav-collections" className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
             </Link>
           </div>
           {isMenuOpen && (
             <div className="absolute top-16 left-0 w-full bg-black/90 flex flex-col items-center space-y-4 py-4 md:hidden z-50">
               <Link to={lang === 'en' ? '/en/AboutUs' : '/AboutUs'} onClick={() => setIsMenuOpen(false)}>
-                <button className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
+                <button data-testid="nav-about-us" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
               </Link>
               <Link to={lang === 'en' ? '/en/Catalog' : '/Catalog'} onClick={() => setIsMenuOpen(false)}>
-                <button className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
+                <button data-testid="nav-catalog" className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
               </Link>
               <Link to={lang === 'en' ? '/en/Collections' : '/Collections'} onClick={() => setIsMenuOpen(false)}>
-                <button className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
+                <button data-testid="nav-collections" className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
               </Link>
             </div>
           )}
