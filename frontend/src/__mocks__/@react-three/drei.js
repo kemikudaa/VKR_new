@@ -1,3 +1,7 @@
 export const useGLTF = jest.fn(() => ({
-  scene: { type: 'Scene' },
+  scene: { isObject3D: true },
+  nodes: {},
+  materials: {},
 }));
+export const OrbitControls = () => null;
+export const PerspectiveCamera = () => null;

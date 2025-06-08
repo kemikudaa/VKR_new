@@ -1,8 +1,3 @@
-// Полифилл для TextEncoder и TextDecoder
-const { TextEncoder, TextDecoder } = require('text-encoding');
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
-
 import { setupServer } from 'msw/node';
 import { rest } from 'msw';
 

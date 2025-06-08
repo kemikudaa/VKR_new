@@ -473,7 +473,6 @@ const Modal = ({ isOpen, onClose }) => {
   );
 };
 const Collections = () => {
-  const [hoveredDisc, setHoveredDisc] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [authors, setAuthors] = useState([]);
   const [filteredAuthors, setFilteredAuthors] = useState([]);
@@ -522,11 +521,11 @@ const Collections = () => {
     setCurrentSlide(0);
   }, [searchQuery, authors]);
 
-  const getCurrentSlideAuthors = () => {
-    const start = currentSlide * AUTHORS_PER_SLIDE;
-    const end = start + AUTHORS_PER_SLIDE;
-    return filteredAuthors.slice(start, end);
-  };
+  // const getCurrentSlideAuthors = () => {
+  //   const start = currentSlide * AUTHORS_PER_SLIDE;
+  //   const end = start + AUTHORS_PER_SLIDE;
+  //   return filteredAuthors.slice(start, end);
+  // };
 
   const handleOpenModal = () => {
     setIsModalOpen(true);

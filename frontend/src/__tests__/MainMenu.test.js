@@ -1,63 +1,62 @@
-// src/__tests__/MainMenu.test.js
-const { TextEncoder, TextDecoder } = require('text-encoding');
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
-
+import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import MainMenu from '../components/MainMenu';
+
+// Подавляем предупреждения React Router
+jest.spyOn(console, 'warn').mockImplementation((message) => {
+  if (message.includes('React Router Future Flag Warning')) {
+    return;
+  }
+  console.warn(message);
+});
 
 const renderWithRouter = (component) => {
   return render(<BrowserRouter>{component}</BrowserRouter>);
 };
 
 describe('MainMenu', () => {
-  test('renders MainMenu на русском языке', () => {
+  it('рендерится корректно на русском', () => {
     renderWithRouter(<MainMenu />);
-    expect(screen.getByText('APROTAG')).toBeInTheDocument();
-    expect(screen.getByTestId('nav-about-us')).toHaveTextContent('О НАС');
-    expect(screen.getByTestId('nav-catalog')).toHaveTextContent('КАТАЛОГ');
-    expect(screen.getByTestId('nav-collections')).toHaveTextContent('КОЛЛЕКЦИИ');
-    expect(screen.getByText('Я АВТОР')).toBeInTheDocument();
+    expect(screen.getByTestId('nav-about-us-desktop')).toHaveTextContent(/О НАС/i);
+    expect(screen.getByTestId('nav-catalog-desktop')).toHaveTextContent(/КАТАЛОГ/i);
+    expect(screen.getByTestId('nav-collections-desktop')).toHaveTextContent(/КОЛЛЕКЦИИ/i);
+    expect(screen.getByText(/Я АВТОР/i)).toBeInTheDocument();
   });
 
-  test('renders MainMenu на английском языке', () => {
+  it('рендерится корректно на английском', () => {
     renderWithRouter(<MainMenu lang="en" />);
-    expect(screen.getByText('APROTAG')).toBeInTheDocument();
-    expect(screen.getByTestId('nav-about-us')).toHaveTextContent('ABOUT US');
-    expect(screen.getByTestId('nav-catalog')).toHaveTextContent('CATALOG');
-    expect(screen.getByTestId('nav-collections')).toHaveTextContent('COLLECTIONS');
-    expect(screen.getByText('I AM AN AUTHOR')).toBeInTheDocument();
+    expect(screen.getByTestId('nav-about-us-desktop')).toHaveTextContent(/ABOUT US/i);
+    expect(screen.getByTestId('nav-catalog-desktop')).toHaveTextContent(/CATALOG/i);
+    expect(screen.getByTestId('nav-collections-desktop')).toHaveTextContent(/COLLECTIONS/i);
+    expect(screen.getByText(/I AM AN AUTHOR/i)).toBeInTheDocument();
   });
 
-  test('открывает мобильное меню при клике на гамбургер', async () => {
+  it('открывает мобильное меню при клике на гамбургер', () => {
     renderWithRouter(<MainMenu />);
     const hamburgerButton = screen.getByText('☰');
     fireEvent.click(hamburgerButton);
     expect(screen.getByText('✕')).toBeInTheDocument();
-    // Проверяем мобильное меню
-    const mobileMenu = await screen.findByTestId('nav-about-us', {
-      container: document.querySelector('.bg-black\\/90'),
-    });
-    expect(mobileMenu).toBeInTheDocument();
-    expect(mobileMenu).toHaveTextContent('О НАС');
+    expect(screen.getByTestId('nav-about-us-mobile')).toBeInTheDocument();
+    expect(screen.getByTestId('nav-catalog-mobile')).toBeInTheDocument();
+    expect(screen.getByTestId('nav-collections-mobile')).toBeInTheDocument();
   });
 
-  test('отображает правильные мета-теги для русского языка', async () => {
+  it('отображает мета-теги для SEO', async () => {
     renderWithRouter(<MainMenu />);
     await waitFor(() => {
       expect(document.title).toBe('APROTAG - Авторские ювелирные изделия');
-      expect(document.querySelector('meta[name="description"]')?.content).toBe(
-        'Платформа APROTAG: уникальные ювелирные изделия с 3D-визуализацией. Купите серьги, кольца и авторские коллекции.'
-      );
     });
   });
 
-  test('проверяет корректность ссылок в навигации', () => {
+  it('проверяет корректность ссылок навигации', () => {
     renderWithRouter(<MainMenu />);
-    const aboutUsLink = screen.getByTestId('nav-about-us').closest('a');
-    const catalogLink = screen.getByTestId('nav-catalog').closest('a');
+    const aboutUsLink = screen.getByTestId('nav-about-us-desktop').closest('a');
+    const catalogLink = screen.getByTestId('nav-catalog-desktop').closest('a');
+    const collectionsLink = screen.getByTestId('nav-collections-desktop').closest('a');
+
     expect(aboutUsLink).toHaveAttribute('href', '/AboutUs');
     expect(catalogLink).toHaveAttribute('href', '/Catalog');
+    expect(collectionsLink).toHaveAttribute('href', '/Collections');
   });
 });

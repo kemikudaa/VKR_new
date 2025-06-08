@@ -1,14 +1,18 @@
-import React, { useEffect, useState, Suspense } from 'react';
-import { Helmet } from 'react-helmet';
-// import axios from 'axios';
-import { useParams, Link } from 'react-router-dom';
+import React, { Suspense, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet'; // Добавляем импорт
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera, useGLTF } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import * as THREE from 'three';
+import axios from 'axios';
+import { useParams, Link } from 'react-router-dom'; // Добавляем Link для навигации
 import './JewelryViewer.css';
+import Model from './Model';
 
 const JewelryViewer = ({ lang = 'ru' }) => {
   const { jewelryId } = useParams();
   const [jewelry, setJewelry] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setLoading(true);
@@ -25,11 +29,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       });
   }, [jewelryId]);
 
-  const Model = ({ fileUrl }) => {
-    const { scene } = useGLTF(fileUrl);
-    return <primitive object={scene} />;
-  };
-
+  if (loading) return <div data-testid="loading">Загрузка...</div>;
+  if (error) return <div data-testid="error-message">Ошибка: {error}</div>;
   if (!jewelry) return <div className="text-white text-center py-10">{lang === 'en' ? 'Loading...' : 'Загрузка...'}</div>;
 
   // Мультиязычные тексты
@@ -46,8 +47,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       breadcrumbCatalog: 'Каталог',
       breadcrumbJewelry: jewelry.name || 'Ювелирное изделие',
       buy: 'КУПИТЬ',
-      material: 'Материал:',
-      size: 'Размер:',
+      materials: 'Материал:',
+      dimensions: 'Размер:',
       alsoLike: 'YOU MAY ALSO LIKE',
       seeMore: 'SEE MORE',
       otherItems: 'другие_изделия_автора',
@@ -65,8 +66,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       breadcrumbCatalog: 'Catalog',
       breadcrumbJewelry: jewelry.name || 'Jewelry',
       buy: 'BUY',
-      material: 'Material:',
-      size: 'Size:',
+      materials: 'Material:',
+      dimensions: 'Size:',
       alsoLike: 'YOU MAY ALSO LIKE',
       seeMore: 'SEE MORE',
       otherItems: 'other_items_by_author',
@@ -227,7 +228,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
           </div>
         </div>
         <div className="group4">
-          <p className="NameJewelry">{jewelry.name || (lang === 'en' ? 'Number One Earring' : 'Number One Earring')}</p>
+          <p className="NameJewelry" data-testid="jewelry-name">{jewelry.name || (lang === 'en' ? 'Number One Earring' : 'Number One Earring')}</p>
           <p className="artic">{lang === 'en' ? 'Article ID:' : 'артикул_ID:'} {jewelry.sku || '3757874'}</p>
         </div>
         <div className="custom-rect4">
@@ -426,23 +427,28 @@ const JewelryViewer = ({ lang = 'ru' }) => {
           </svg>
         </div>
         <div className="jewelry_3d">
-          {/* <Suspense fallback={<div className="text-center py-10">Загрузка 3D-модели...</div>}> */}
-          {jewelry.three_d_file ? (
-            <Canvas style={{ width: '505.75px', height: '444px' }} data-testid="canvas-mock">
-              <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} />
-              <ambientLight intensity={1.0} color="white" />
-              <directionalLight position={[5, 5, 5]} intensity={2} color="white" />
-              <directionalLight position={[-5, -5, 5]} intensity={1} color="white" />
-              <directionalLight position={[0, 10, 0]} intensity={1.5} color="white" />
-              <pointLight position={[2, 2, 2]} intensity={1} color="white" />
-              <pointLight position={[-2, -2, 2]} intensity={1} color="white" />
-              <OrbitControls minDistance={2} maxDistance={10} />
-              <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
-            </Canvas>
-          ) : (
-            <img src="/img/SnapBG.ai_1745139437294 1.png" alt={jewelry.name} className="three_d_img" loading="lazy" />
-          )}
-          {/* </Suspense> */}
+          <Suspense fallback={<div data-testid="loading-3d">Загрузка 3D-модели...</div>}>
+            {jewelry.three_d_file ? (
+              <Canvas style={{ width: '505.75px', height: '444px' }} data-testid="canvas-mock">
+                <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} />
+                <primitive object={new THREE.AmbientLight(0xffffff, 1.0)} />
+                <primitive object={new THREE.DirectionalLight(0xffffff, 2)} position={[5, 5, 5]} />
+                <primitive object={new THREE.DirectionalLight(0xffffff, 1)} position={[-5, -5, 5]} />
+                <primitive object={new THREE.DirectionalLight(0xffffff, 1.5)} position={[0, 10, 0]} />
+                <primitive object={new THREE.PointLight(0xffffff, 1)} position={[2, 2, 2]} />
+                <primitive object={new THREE.PointLight(0xffffff, 1)} position={[-2, -2, 2]} />
+                <OrbitControls minDistance={2} maxDistance={10} />
+                <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
+              </Canvas>
+            ) : (
+              <img
+                src="/img/SnapBG.ai_1745139437294 1.png"
+                alt={jewelry.name}
+                className="three_d_img"
+                loading="lazy"
+              />
+            )}
+          </Suspense>
         </div>
         <p className="alsolike">YOU MAY ALSO LIKE</p>
         <div className="groupAlsoLike">

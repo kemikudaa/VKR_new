@@ -1,9 +1,6 @@
 import './LogInAuthor.css';
-import StatusComponent from './StatusComponent';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css';
 import { useRef } from 'react';
 
 const CustomInput = ({ label, placeholder, placeholderColor = "#999999", type = 'text', ...props }) => {

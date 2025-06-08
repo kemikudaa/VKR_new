@@ -1,8 +1,21 @@
-module.exports = {
-  ...jest.requireActual('three'),
-  GLTFLoader: jest.fn().mockImplementation(() => ({
-    load: jest.fn((url, onLoad) => {
-      onLoad({ scene: {} }); // Мок для загрузки модели
-    }),
+const THREE = {
+  AmbientLight: jest.fn().mockImplementation(() => ({
+    isLight: true,
+  })),
+  DirectionalLight: jest.fn().mockImplementation(() => ({
+    isLight: true,
+    position: { set: jest.fn() },
+  })),
+  PointLight: jest.fn().mockImplementation(() => ({
+    isLight: true,
+    position: { set: jest.fn() },
+  })),
+  Object3D: jest.fn().mockImplementation(() => ({
+    isObject3D: true,
+  })),
+  Vector3: jest.fn().mockImplementation(() => ({
+    set: jest.fn(),
   })),
 };
+
+module.exports = THREE;

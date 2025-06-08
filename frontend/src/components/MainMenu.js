@@ -108,25 +108,31 @@ const MainMenu = ({ lang = 'ru' }) => {
           </div>
           <div className="hidden md:flex space-x-16 border border-white rounded-full px-6 py-2">
             <Link to={lang === 'en' ? '/en/AboutUs' : '/AboutUs'}>
-              <button data-testid="nav-about-us" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
+              <button data-testid="nav-about-us-desktop" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
             </Link>
             <Link to={lang === 'en' ? '/en/Catalog' : '/Catalog'}>
-              <button data-testid="nav-catalog" className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
+              <button data-testid="nav-catalog-desktop" className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
             </Link>
             <Link to={lang === 'en' ? '/en/Collections' : '/Collections'}>
-              <button data-testid="nav-collections" className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
+              <button data-testid="nav-collections-desktop" className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
             </Link>
           </div>
           {isMenuOpen && (
             <div className="absolute top-16 left-0 w-full bg-black/90 flex flex-col items-center space-y-4 py-4 md:hidden z-50">
               <Link to={lang === 'en' ? '/en/AboutUs' : '/AboutUs'} onClick={() => setIsMenuOpen(false)}>
-                <button data-testid="nav-about-us" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
+                <button data-testid="nav-about-us-mobile" className="text-white font-light text-sm hover:underline">
+                  {lang === 'en' ? 'ABOUT US' : 'О НАС'}
+                </button>
               </Link>
               <Link to={lang === 'en' ? '/en/Catalog' : '/Catalog'} onClick={() => setIsMenuOpen(false)}>
-                <button data-testid="nav-catalog" className="text-white font-light text-sm hover:underline">{t.navCatalog}</button>
+                <button data-testid="nav-catalog-mobile" className="text-white font-light text-sm hover:underline">
+                  {lang === 'en' ? 'CATALOG' : 'КАТАЛОГ'}
+                </button>
               </Link>
               <Link to={lang === 'en' ? '/en/Collections' : '/Collections'} onClick={() => setIsMenuOpen(false)}>
-                <button data-testid="nav-collections" className="text-white font-light text-sm hover:underline">{t.navCollections}</button>
+                <button data-testid="nav-collections-mobile" className="text-white font-light text-sm hover:underline">
+                  {lang === 'en' ? 'COLLECTIONS' : 'КОЛЛЕКЦИИ'}
+                </button>
               </Link>
             </div>
           )}
@@ -247,7 +253,7 @@ const MainMenu = ({ lang = 'ru' }) => {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex justify-end mt-8 md:mt-0">
-          <img src="img/Group 2.png" alt="Slide 2 Image" className="w-full md:w-4/5 lg:w-2/3 max-w-[600px] h-auto" />
+          <img src="img/Group 2.png" alt="Slide 2" className="w-full md:w-4/5 lg:w-2/3 max-w-[600px] h-auto" />
         </div>
       </div>
 
@@ -342,7 +348,7 @@ const MainMenu = ({ lang = 'ru' }) => {
           <p className="text-[#5F5F5F] font-gajraj text-xl md:text-2xl lg:text-3xl mt-8">FUTURE WITH AI</p>
           <img
             src="img/Group 10.png"
-            alt="Collections Image"
+            alt="Collections"
             className="w-full md:max-w-full md:max-h-[400px] lg:max-w-[500px] lg:max-h-none h-auto mt-6 object-cover"
           />
           <p className="text-white font-jura text-sm md:text-base lg:text-lg mt-6 pr-0 max-w-[300px] md:max-w-[400px] lg:max-w-[500px]">

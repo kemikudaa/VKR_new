@@ -1,16 +1,21 @@
-// src/__tests__/App.test.js
+import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
-import App from '../App';
-import axios from 'axios';
+import App from './App';
 
 jest.mock('axios');
+jest.mock('three/examples/jsm/loaders/GLTFLoader');
 
-test('renders App component', () => {
-  render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  );
-  expect(screen.getByText(/APROTAG/i)).toBeInTheDocument();
+// Подавляем предупреждения React Router
+jest.spyOn(console, 'warn').mockImplementation((message) => {
+  if (message.includes('React Router Future Flag')) {
+    return;
+  }
+  console.warn(message);
+});
+
+describe('App', () => {
+  it('renders App component', () => {
+    render(<App />);
+    expect(screen.getByText(/apro__ ___tag./i)).toBeInTheDocument();
+  });
 });
