@@ -51,6 +51,7 @@ const App = () => {
             <div className="logo">
               <p className="logo_txt">apro__ ___tag.</p>
             </div>
+            <Link to="/LogInAuthor">
             <button className="log-in-author">
               <p className="Author">Я АВТОР</p>
               <div className="line_button">
@@ -59,6 +60,7 @@ const App = () => {
                 </svg>
               </div>
             </button>
+            </Link>
           </div>
 
           <p className="Catalog_maintxt">CATALOG</p>
