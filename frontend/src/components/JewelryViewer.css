@@ -276,11 +276,11 @@
 
 .NameJewelry{
     position: absolute;
-    top: 175px;
+    top: 280px;
     left: 80px;
     width: 540px;
     height: 70px;
-    font-family: 'Gajraj One';
+    font-family: 'Jura';
     font-size: 48px;
     color: #FFFFFF;
 }
@@ -292,7 +292,7 @@
     font-family: 'Jura';
     font-size: 16px;
     color: #FFFFFF;
-    top: 245px;
+    top: 360px;
     left: 80px;
     font-weight: 400;
 }
