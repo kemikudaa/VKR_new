@@ -1,3 +1,31 @@
+/* @font-face {
+  font-family: 'Jura';
+  src: url('/fonts/Jura-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stalinist One';
+  src: url('/fonts/StalinistOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gajraj One';
+  src: url('/fonts/GajrajOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oi';
+  src: url('/fonts/Oi-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,10 +33,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.font-jura {
+  font-family: 'Jura', sans-serif;
+}
+.font-stalinist {
+  font-family: 'Stalinist One', serif;
+}
+.font-gajraj {
+  font-family: 'Gajraj One', sans-serif;
+}
+.font-oi {
+  font-family: 'Oi', sans-serif;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+  }
+  to {
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF;
+  }
+}
+
+.arrow-icon {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+.arrow-icon:hover {
+  fill: black;
+}
+

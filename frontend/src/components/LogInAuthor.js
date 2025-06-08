@@ -1,9 +1,6 @@
 import './LogInAuthor.css';
-import StatusComponent from './StatusComponent';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css';
 import { useRef } from 'react';
 
 const CustomInput = ({ label, placeholder, placeholderColor = "#999999", type = 'text', ...props }) => {
@@ -120,7 +117,7 @@ const App = () => {
   return (
     <div>
       <div className="LogInAuthorBody">
-        <div className="slide1">
+        <div className="slide_1">
           <img src="/img/bg_loginauthor.png" alt="" className="bg_LogInAuthor" />
           <div className="navbar">
             <div className="menu">

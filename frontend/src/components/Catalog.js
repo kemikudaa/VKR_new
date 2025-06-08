@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Импортируем Link
 
 const App = () => {
-  const [hoveredDisc, setHoveredDisc] = useState(null);
   // Состояние для текущего слайда (1, 2, 3)
   const [currentSlide, setCurrentSlide] = useState(1);
   const totalSlides = 3;
