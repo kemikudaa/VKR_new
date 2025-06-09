@@ -397,7 +397,7 @@
     width: 272px;
     height: 76px;
     left: 16px;
-    top: 28px;
+    top: 20px;
     font-family: 'Jura';
     font-size: 16px;
     color: #FFFFFF;
@@ -549,7 +549,7 @@
     margin: 0;
     padding: 0;
     left: 59px;
-    top: 41px;
+    top: 64px;
 }
 
 .product_search{
@@ -629,7 +629,7 @@
     margin: 0;
     padding: 0;
     left: 50px;
-    top: 39px;
+    top: 64px;
 }
 
 .product_search_txt2{
@@ -675,7 +675,7 @@
 .Vector12{
     position: absolute;
     left: 39px;
-    top: 42px;
+    top: 64px;
 }
 
 .product_search3{

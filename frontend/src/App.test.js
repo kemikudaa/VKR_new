@@ -5,7 +5,6 @@ import App from './App';
 jest.mock('axios');
 jest.mock('three/examples/jsm/loaders/GLTFLoader');
 
-// Подавляем предупреждения React Router
 jest.spyOn(console, 'warn').mockImplementation((message) => {
   if (message.includes('React Router Future Flag')) {
     return;

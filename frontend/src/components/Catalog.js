@@ -1,6 +1,7 @@
 import './Catalog.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Импортируем Link
+import Navbar from './Navbar';
 
 const App = () => {
   // Состояние для текущего слайда (1, 2, 3)
@@ -35,7 +36,7 @@ const App = () => {
       <div className="CatalogBody">
         <div className="slide1">
           <img src="/img/bg_catalog.png" alt="" className="bg_catalog" />
-          <div className="navbar">
+          {/* <div className="navbar">
             <div className="menu">
               <Link to="/AboutUs">
                 <button className="menu_1">О НАС</button>
@@ -58,7 +59,8 @@ const App = () => {
                 </svg>
               </div>
             </button>
-          </div>
+          </div> */}
+          <Navbar/>
 
           <p className="Catalog_maintxt">CATALOG</p>
           <p className="Catalog_maintxt2">CREATING</p>
