@@ -15,6 +15,6 @@ jest.spyOn(console, 'warn').mockImplementation((message) => {
 describe('App', () => {
   it('renders App component', () => {
     render(<App />);
-    expect(screen.getByText(/apro__ ___tag./i)).toBeInTheDocument();
+    expect(screen.getByTestId('logo')).toBeInTheDocument();
   });
 });

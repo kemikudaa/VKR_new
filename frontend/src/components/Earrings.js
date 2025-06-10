@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 function Earring({ earPositions }) {
   const canvasRef = useRef(null);
@@ -32,17 +32,17 @@ function Earring({ earPositions }) {
     sceneRef.current.add(directionalLight);
 
     // Load earring model
-    const loader = new GLTFLoader();
-    loader.load('/modelss/earr.glb', (gltf) => {
-      const earringLeft = gltf.scene.clone();
-      const earringRight = gltf.scene.clone();
-      earringLeft.scale.set(0.05, 0.05, 0.05);
-      earringRight.scale.set(0.05, 0.05, 0.05);
-      setEarringLeft(earringLeft);
-      setEarringRight(earringRight);
-      sceneRef.current.add(earringLeft);
-      sceneRef.current.add(earringRight);
-    });
+    // const loader = new GLTFLoader();
+    // loader.load('/modelss/earr.glb', (gltf) => {
+    //   const earringLeft = gltf.scene.clone();
+    //   const earringRight = gltf.scene.clone();
+    //   earringLeft.scale.set(0.05, 0.05, 0.05);
+    //   earringRight.scale.set(0.05, 0.05, 0.05);
+    //   setEarringLeft(earringLeft);
+    //   setEarringRight(earringRight);
+    //   sceneRef.current.add(earringLeft);
+    //   sceneRef.current.add(earringRight);
+    // });
 
     cameraRef.current.position.z = 5;
 

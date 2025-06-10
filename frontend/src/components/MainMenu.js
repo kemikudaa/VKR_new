@@ -100,14 +100,14 @@ const MainMenu = ({ lang = 'ru' }) => {
 
       <div className="relative w-full min-h-[80px] flex flex-col items-center">
         <img src="img/bg (3).png" alt="Фон главной страницы" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-        {/* <nav className="relative w-full flex justify-between items-center px-4 py-6 md:px-8 lg:px-20">
-          <div className="text-white text-sm font-oi md:block hidden">apro__ ___tag.</div>
+        <nav className="relative w-full flex justify-between items-center px-4 py-6 md:px-8 lg:px-20">
+          <div className="text-white text-sm font-oi md:block hidden" data-testid="logo">apro__<br />___tag.</div>
           <div className="md:hidden flex items-center">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl focus:outline-none">
               {isMenuOpen ? '✕' : '☰'}
             </button>
           </div>
-          <div className="hidden md:flex space-x-16 border border-white rounded-full px-6 py-2">
+          <div className="hidden md:flex space-x-16 border border-white rounded-full px-28 py-2">
             <Link to={lang === 'en' ? '/en/AboutUs' : '/AboutUs'}>
               <button data-testid="nav-about-us-desktop" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
             </Link>
@@ -138,15 +138,15 @@ const MainMenu = ({ lang = 'ru' }) => {
             </div>
           )}
           <Link to="/LogInAuthor">
-            <button className="flex items-center space-x-2 bg-white text-black rounded-full px-4 py-2 hover:bg-gray-200">
+            <button className="flex items-center space-x-2 bg-white text-black rounded-full px-7 py-3 hover:bg-gray-200">
               <span className="text-sm font-semibold">{t.navAuthor}</span>
               <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="black" />
               </svg>
             </button>
           </Link>
-        </nav> */}
-        <Navbar/>
+        </nav>
+        {/* <Navbar/> */}
         <div className="relative w-full flex items-center justify-center py-8 px-4 md:px-8 lg:px-16 min-h-[500px] md:min-h-[600px] lg:min-h-[800px]">
           <h1 className="absolute top-10 md:top-16 lg:top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-stalinist text-[48px] md:text-[96px] lg:text-[128px] z-10">
             APROTAG

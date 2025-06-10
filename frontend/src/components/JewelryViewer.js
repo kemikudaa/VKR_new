@@ -223,7 +223,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
               </defs>
             </svg>
             <div className="content-inside2">
-              <p className="coll_name2">{lang === 'en' ? '/002_EARRINGS' : '/002_СЕРЬГИ'}</p>
+              <p className="coll_name2">{lang === 'en' ? '/002_EARRINGS' : '/002_EARRINGS'}</p>
             </div>
           </div>
         </div>
@@ -437,7 +437,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
                 <primitive object={new THREE.DirectionalLight(0xffffff, 1.5)} position={[0, 10, 0]} />
                 <primitive object={new THREE.PointLight(0xffffff, 1)} position={[2, 2, 2]} />
                 <primitive object={new THREE.PointLight(0xffffff, 1)} position={[-2, -2, 2]} />
-                <OrbitControls minDistance={2} maxDistance={10} />
+                <OrbitControls minDistance={2} maxDistance={1000} />
                 <Model fileUrl={`http://127.0.0.1:8000/${jewelry.three_d_file}`} />
               </Canvas>
             ) : (
@@ -445,7 +445,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
                 src="/img/SnapBG.ai_1745139437294 1.png"
                 alt={jewelry.name}
                 className="three_d_img"
-                loading="lazy"
+                // loading="lazy"
               />
             )}
           </Suspense>
