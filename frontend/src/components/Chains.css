@@ -1,0 +1,342 @@
+/* Chains.css */
+
+.chains-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.chains-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.chains-title {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.chains-content {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 40px;
+  padding: 40px;
+  min-height: calc(100vh - 100px);
+}
+
+/* Информация об украшении */
+.jewelry-info {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  height: fit-content;
+}
+
+.jewelry-info h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.jewelry-price {
+  font-size: 28px;
+  font-weight: 600;
+  color: #00ff88;
+  margin-bottom: 15px;
+}
+
+.jewelry-material {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+/* Секция камеры */
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-container {
+  width: 100%;
+  max-width: 640px;
+  height: 480px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.camera-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.start-camera-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.start-camera-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.instructions {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.camera-active {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.detection-canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* Зеркальное отображение */
+}
+
+.camera-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.stop-camera-btn {
+  background: linear-gradient(135deg, #ff4757, #ff6b7d);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stop-camera-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(255, 71, 87, 0.3);
+}
+
+.detection-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #666;
+}
+
+.status-indicator.active {
+  background: #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+/* Информация о детекции */
+.detection-info {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  height: fit-content;
+}
+
+.detection-info h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.info-value.active {
+  color: #00ff88;
+}
+
+.info-value.inactive {
+  color: #ff4757;
+}
+
+/* Загрузка и ошибки */
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.error {
+  color: #ff4757;
+}
+
+/* Анимации */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .chains-content {
+    grid-template-columns: 250px 1fr 250px;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chains-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .chains-header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .chains-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .camera-container {
+    height: 300px;
+  }
+  
+  .jewelry-info,
+  .detection-info {
+    order: 2;
+  }
+  
+  .camera-section {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .chains-header {
+    padding: 10px 15px;
+  }
+  
+  .chains-content {
+    padding: 10px;
+  }
+  
+  .jewelry-info,
+  .detection-info {
+    padding: 20px;
+  }
+  
+  .start-camera-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
