@@ -1,15 +1,16 @@
 import React, { Suspense, useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet'; // Добавляем импорт
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import * as THREE from 'three';
 import axios from 'axios';
-import { useParams, Link } from 'react-router-dom'; // Добавляем Link для навигации
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import './JewelryViewer.css';
 import Model from './Model';
 
 const JewelryViewer = ({ lang = 'ru' }) => {
   const { jewelryId } = useParams();
+  const navigate = useNavigate();
   const [jewelry, setJewelry] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -29,6 +30,31 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       });
   }, [jewelryId]);
 
+  const handleTryOn = () => {
+    if (jewelry) {
+      const categoryId = jewelry.category_id;
+      let tryOnRoute = '';
+      const categoryMapping = {
+        1: 'rings',      // кольца
+        2: 'rings',      // кольца
+        3: 'rings',      // кольца
+        4: 'chains',     // цепочки/колье
+        5: 'chains',     // цепочки/колье
+        6: 'chains',     // ожерелья
+      };
+
+      if (categoryId && categoryMapping[categoryId]) {
+        const jewelryType = categoryMapping[categoryId];
+        tryOnRoute = `/try-on/${jewelryType}/${jewelryId}`;
+      } else {
+        tryOnRoute = `/try-on/chains/${jewelryId}`;
+      }
+
+      navigate(tryOnRoute);
+    }
+  };
+
+
   if (loading) return <div data-testid="loading">Загрузка...</div>;
   if (error) return <div data-testid="error-message">Ошибка: {error}</div>;
   if (!jewelry) return <div className="text-white text-center py-10">{lang === 'en' ? 'Loading...' : 'Загрузка...'}</div>;
@@ -36,8 +62,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
   // Мультиязычные тексты
   const texts = {
     ru: {
-      title: `${jewelry.name || 'Ювелирное изделие'} - APROTAG`,
-      description: jewelry.description || 'Купите уникальные ювелирные изделия с 3D-визуализацией на APROTAG.',
+      title: `${jewelry?.name || 'Ювелирное изделие'} - APROTAG`,
+      description: jewelry?.description || 'Купите уникальные ювелирные изделия с 3D-визуализацией на APROTAG.',
       keywords: 'ювелирные изделия, серьги, кольца, авторские украшения, 3D-визуализация',
       navAboutUs: 'О НАС',
       navCatalog: 'КАТАЛОГ',
@@ -45,7 +71,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       navAuthor: 'Я АВТОР',
       breadcrumbHome: 'Главная',
       breadcrumbCatalog: 'Каталог',
-      breadcrumbJewelry: jewelry.name || 'Ювелирное изделие',
+      breadcrumbJewelry: jewelry?.name || 'Ювелирное изделие',
+      tryOn: 'ПРИМЕРИТЬ',
       buy: 'КУПИТЬ',
       materials: 'Материал:',
       dimensions: 'Размер:',
@@ -55,8 +82,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       modelPhoto: 'фото_на_модели',
     },
     en: {
-      title: `${jewelry.name || 'Jewelry'} - APROTAG`,
-      description: jewelry.description || 'Buy unique jewelry with 3D visualization on APROTAG.',
+      title: `${jewelry?.name || 'Jewelry'} - APROTAG`,
+      description: jewelry?.description || 'Buy unique jewelry with 3D visualization on APROTAG.',
       keywords: 'jewelry, earrings, rings, handmade jewelry, 3D visualization',
       navAboutUs: 'ABOUT US',
       navCatalog: 'CATALOG',
@@ -64,7 +91,8 @@ const JewelryViewer = ({ lang = 'ru' }) => {
       navAuthor: 'I AM AN AUTHOR',
       breadcrumbHome: 'Home',
       breadcrumbCatalog: 'Catalog',
-      breadcrumbJewelry: jewelry.name || 'Jewelry',
+      breadcrumbJewelry: jewelry?.name || 'Jewelry',
+      tryOn: 'TRY ON',
       buy: 'BUY',
       materials: 'Material:',
       dimensions: 'Size:',
@@ -445,7 +473,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
                 src="/img/SnapBG.ai_1745139437294 1.png"
                 alt={jewelry.name}
                 className="three_d_img"
-                // loading="lazy"
+              // loading="lazy"
               />
             )}
           </Suspense>
