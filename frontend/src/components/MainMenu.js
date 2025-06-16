@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const MainMenu = ({ lang = 'ru' }) => {
   const [hoveredDisc, setHoveredDisc] = useState(null);
@@ -100,13 +101,13 @@ const MainMenu = ({ lang = 'ru' }) => {
       <div className="relative w-full min-h-[80px] flex flex-col items-center">
         <img src="img/bg (3).png" alt="Фон главной страницы" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
         <nav className="relative w-full flex justify-between items-center px-4 py-6 md:px-8 lg:px-20">
-          <div className="text-white text-sm font-oi md:block hidden">apro__ ___tag.</div>
+          <div className="text-white text-sm font-oi md:block hidden" data-testid="logo">apro__<br />___tag.</div>
           <div className="md:hidden flex items-center">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl focus:outline-none">
               {isMenuOpen ? '✕' : '☰'}
             </button>
           </div>
-          <div className="hidden md:flex space-x-16 border border-white rounded-full px-6 py-2">
+          <div className="hidden md:flex space-x-16 border border-white rounded-full px-28 py-2">
             <Link to={lang === 'en' ? '/en/AboutUs' : '/AboutUs'}>
               <button data-testid="nav-about-us-desktop" className="text-white font-light text-sm hover:underline">{t.navAboutUs}</button>
             </Link>
@@ -137,7 +138,7 @@ const MainMenu = ({ lang = 'ru' }) => {
             </div>
           )}
           <Link to="/LogInAuthor">
-            <button className="flex items-center space-x-2 bg-white text-black rounded-full px-4 py-2 hover:bg-gray-200">
+            <button className="flex items-center space-x-2 bg-white text-black rounded-full px-7 py-3 hover:bg-gray-200">
               <span className="text-sm font-semibold">{t.navAuthor}</span>
               <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" fill="black" />
@@ -145,7 +146,8 @@ const MainMenu = ({ lang = 'ru' }) => {
             </button>
           </Link>
         </nav>
-        <div className="relative w-full flex items-center justify-center py-8 px-4 md:px-8 lg:px-40 min-h-[500px] md:min-h-[600px] lg:min-h-[800px]">
+        {/* <Navbar/> */}
+        <div className="relative w-full flex items-center justify-center py-8 px-4 md:px-8 lg:px-16 min-h-[500px] md:min-h-[600px] lg:min-h-[800px]">
           <h1 className="absolute top-10 md:top-16 lg:top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-stalinist text-[48px] md:text-[96px] lg:text-[128px] z-10">
             APROTAG
           </h1>
@@ -158,19 +160,19 @@ const MainMenu = ({ lang = 'ru' }) => {
           <div className="absolute left-4 md:left-8 lg:left-40 top-[16%] md:top-[25%] lg:top-[40%] flex flex-col space-y-2 text-white z-30">
             <div className="flex space-x-2">
               <span className="font-gajraj text-xs md:text-xl lg:text-2xl">/001</span>
-              <span className="font-gajraj text-xs md:text-xl lg:text-2xl">{lang === 'en' ? 'RINGS' : 'КОЛЬЦА'}</span>
+              <span className="font-gajraj text-xs md:text-xl lg:text-2xl">{lang === 'en' ? 'RINGS' : 'RINGS'}</span>
             </div>
             <div className="flex space-x-2">
               <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">/002</span>
-              <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">{lang === 'en' ? 'EARRINGS' : 'СЕРЬГИ'}</span>
+              <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">{lang === 'en' ? 'EARRINGS' : 'EARRINGS'}</span>
             </div>
             <div className="flex space-x-2">
               <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">/003</span>
-              <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">{lang === 'en' ? 'CHAINS' : 'ЦЕПОЧКИ'}</span>
+              <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">{lang === 'en' ? 'CHAINS' : 'CHAINS'}</span>
             </div>
             <div className="flex space-x-2">
               <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">/004</span>
-              <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">{lang === 'en' ? 'OTHER' : 'ДРУГОЕ'}</span>
+              <span className="font-gajraj text-xs md:text-xl lg:text-2xl text-gray-500">{lang === 'en' ? 'OTHER' : 'OTHER'}</span>
             </div>
           </div>
           <div className="absolute right-4 md:right-8 lg:right-40 top-[30%] md:top-[25%] lg:top-[35%] flex flex-col items-center z-30">
@@ -179,7 +181,7 @@ const MainMenu = ({ lang = 'ru' }) => {
               {lang === 'en' ? 'simple vision of future elements create your individuality' : 'простое видение будущих элементов создаёт вашу индивидуальность'}
             </p>
           </div>
-          <div className="absolute bottom-[4%] md:bottom-[4%] lg:bottom-[4%] w-full flex flex-col md:flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 lg:space-x-4 px-4 md:px-8 lg:px-40 z-20">
+          <div className="absolute bottom-[4%] md:bottom-[4%] lg:bottom-[4%] w-full flex flex-col md:flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 lg:space-x-4 px-4 md:px-8 lg:px-16 z-20">
             <div
               className={`relative w-full lg:w-1/2 min-h-24 bg-white/10 backdrop-blur-lg border border-white rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-2xl hover:border-none`}
               onMouseEnter={() => setHoveredDisc(1)}
@@ -229,7 +231,7 @@ const MainMenu = ({ lang = 'ru' }) => {
       </div>
 
       {/* Slide 2 */}
-      <div className="relative w-full max-h-[713px] bg-[#0A0A0A] flex flex-col md:flex-row items-center mt-32 py-0 px-4 lg:py-16 px-8 lg:px-40">
+      <div className="relative w-full max-h-[713px] bg-[#0A0A0A] flex flex-col md:flex-row items-center mt-32 py-0 px-4 lg:py-16 px-8 lg:px-16">
         <div className="w-full md:w-1/2 flex flex-col relative">
           <div className="relative w-full mb-8 md:mb-16">
             <h2 className="text-right md:right-16 lg:right-32 text-white font-jura text-3xl md:text-5xl lg:text-[64px] neon-text">OUR<br />PHILOSOPHY</h2>
@@ -258,7 +260,7 @@ const MainMenu = ({ lang = 'ru' }) => {
       </div>
 
       {/* Slide 3 */}
-      <div className="relative w-full min-h-[1000px] bg-[#0A0A0A] flex flex-col items-center py-8 px-4 md:px-8 lg:px-40">
+      <div className="relative w-full min-h-[1000px] bg-[#0A0A0A] flex flex-col items-center py-8 px-4 md:px-8 lg:px-16">
         <div className="flex w-full justify-end">
           <h2 className="md:right-16 lg:right-32 text-white font-jura text-3xl md:text-5xl lg:text-[64px] neon-text">{t.navCatalog}</h2>
         </div>
@@ -342,7 +344,7 @@ const MainMenu = ({ lang = 'ru' }) => {
       </div>
 
       {/* Slide 4 */}
-      <div className="relative w-full min-h-[713px] bg-[#0A0A0A] flex flex-col md:flex-col lg:flex-row items-center py-16 px-4 md:px-8 lg:px-40">
+      <div className="relative w-full min-h-[713px] bg-[#0A0A0A] flex flex-col md:flex-col lg:flex-row items-center py-16 px-4 md:px-8 lg:px-16">
         <div className="w-full lg:w-1/2 flex flex-col items-start mb-4 md:mb-4 lg:mb-0">
           <p className="text-white font-jura text-3xl md:text-5xl lg:text-[64px] neon-text">{t.navCollections}</p>
           <p className="text-[#5F5F5F] font-gajraj text-xl md:text-2xl lg:text-3xl mt-8">FUTURE WITH AI</p>

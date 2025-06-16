@@ -207,7 +207,7 @@
 
 .line_to_group{
     position: absolute;
-    top: 18.5px;
+    top: 32px;
     margin: 0;
     padding: 0;
 }
@@ -975,7 +975,7 @@
     position: absolute;
     width: 100%;
     height: 310px;
-    top: 2439px;
+    top: 2680px;
     left: 0;
 }
 
@@ -1049,7 +1049,7 @@
 
 .copyrigth2{
     position: absolute;
-    top: 2743px;
+    top: 2990px;
     left: 0;
     width: 100%;
     height: 401px;
