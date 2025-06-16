@@ -458,7 +458,7 @@ const JewelryViewer = ({ lang = 'ru' }) => {
           <Suspense fallback={<div data-testid="loading-3d">Загрузка 3D-модели...</div>}>
             {jewelry.three_d_file ? (
               <Canvas style={{ width: '505.75px', height: '444px' }} data-testid="canvas-mock">
-                <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={25} />
+                <PerspectiveCamera makeDefault position={[0, 0, 1]} fov={40} />
                 <primitive object={new THREE.AmbientLight(0xffffff, 1.0)} />
                 <primitive object={new THREE.DirectionalLight(0xffffff, 2)} position={[5, 5, 5]} />
                 <primitive object={new THREE.DirectionalLight(0xffffff, 1)} position={[-5, -5, 5]} />

@@ -268,12 +268,14 @@ const MainMenu = ({ lang = 'ru' }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-0">
             <div className="border border-white border-opacity-50 p-4 lg:p-6 relative bg-transparent flex flex-col items-center">
               <img src="img/acc1.png" alt={lang === 'en' ? 'Necklace' : 'Ожерелье'} className="w-full max-w-[200px] h-auto object-contain mx-auto" />
+              <Link to={lang === 'en' ? '/en/jewelry/10' : '/jewelry/10'}>
               <button className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 flex items-center space-x-2 border border-white rounded-full text-white px-3 py-1 lg:px-4 lg:py-2 hover:bg-white hover:text-black">
                 <span className="text-xs md:text-sm font-jura">{lang === 'en' ? 'GO TO' : 'ПЕРЕЙТИ'}</span>
                 <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon group-hover:fill-black">
                   <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" />
                 </svg>
               </button>
+              </Link>
             </div>
             <div className="border border-white border-opacity-50 p-4 lg:p-6 flex items-center justify-center bg-transparent">
               <p className="text-center text-[#5F5F5F] font-gajraj text-sm md:text-lg lg:text-xl">WITH CARING<br className="md:hidden" /> ABOUT YOUR<br className="md:hidden" /> FASHION</p>
@@ -298,41 +300,49 @@ const MainMenu = ({ lang = 'ru' }) => {
               <p className="text-white text-sm md:text-base font-jura mb-4">
                 {lang === 'en' ? 'Next generation of Yakutian jewelry. Modern works by our local artisans.' : 'Новое поколение якутских украшений. Авторские работы наших местных мастеров в современный лад.'}
               </p>
+              <Link to={lang === 'en' ? '/en/jewelry/10' : '/jewelry/10'}>
               <button className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 flex items-center space-x-2 border border-white rounded-full text-white px-3 py-1 lg:px-4 lg:py-2 hover:bg-white hover:text-black">
                 <span className="text-xs md:text-sm font-jura">{lang === 'en' ? 'GO TO' : 'ПЕРЕЙТИ'}</span>
                 <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon group-hover:fill-black">
                   <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" />
                 </svg>
               </button>
+              </Link>
             </div>
             <div className="border border-white border-opacity-50 p-4 lg:p-6 relative bg-transparent flex flex-col items-center">
               <img src="img/rhb.png" alt={lang === 'en' ? 'Pendant' : 'Подвеска'} className="w-full max-w-[200px] h-auto object-contain mx-auto" />
+              <Link to={lang === 'en' ? '/en/jewelry/10' : '/jewelry/10'}>
               <button className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 flex items-center space-x-2 border border-white rounded-full text-white px-3 py-1 lg:px-4 lg:py-2 hover:bg-white hover:text-black">
                 <span className="text-xs md:text-sm font-jura">{lang === 'en' ? 'GO TO' : 'ПЕРЕЙТИ'}</span>
                 <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon group-hover:fill-black">
                   <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" />
                 </svg>
               </button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-0 mt-0">
             <div className="border border-white border-opacity-50 p-4 lg:p-6 relative bg-transparent flex flex-col items-center">
               <img src="img/rhb2.png" alt={lang === 'en' ? 'Earrings' : 'Серьги'} className="w-full max-w-[200px] h-auto object-contain mx-auto" />
+              <Link to={lang === 'en' ? '/en/jewelry/10' : '/jewelry/10'}>
               <button className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 flex items-center space-x-2 border border-white rounded-full text-white px-3 py-1 lg:px-4 lg:py-2 hover:bg-white hover:text-black">
                 <span className="text-xs md:text-sm font-jura">{lang === 'en' ? 'GO TO' : 'ПЕРЕЙТИ'}</span>
                 <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon group-hover:fill-black">
                   <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" />
                 </svg>
               </button>
+              </Link>
             </div>
             <div className="border border-white border-opacity-50 p-4 lg:p-6 relative bg-transparent flex flex-col items-center">
               <img src="img/rhb3.png" alt={lang === 'en' ? 'Ring' : 'Кольцо'} className="w-full max-w-[200px] h-auto object-contain mx-auto" />
+              <Link to={lang === 'en' ? '/en/jewelry/10' : '/jewelry/10'}>              
               <button className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 flex items-center space-x-2 border border-white rounded-full text-white px-3 py-1 lg:px-4 lg:py-2 hover:bg-white hover:text-black">
                 <span className="text-xs md:text-sm font-jura">{lang === 'en' ? 'GO TO' : 'ПЕРЕЙТИ'}</span>
                 <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-icon group-hover:fill-black">
                   <path d="M40.3491 4.10794C40.5468 3.91514 40.5508 3.59858 40.3579 3.40089L37.216 0.17939C37.0232 -0.0182978 36.7066 -0.0222547 36.5089 0.170552C36.3112 0.363358 36.3073 0.679916 36.5001 0.877603L39.2929 3.74116L36.4294 6.53402C36.2317 6.72682 36.2277 7.04338 36.4205 7.24107C36.6134 7.43875 36.9299 7.44271 37.1276 7.24991L40.3491 4.10794ZM-0.00624951 3.74996L39.9937 4.24996L40.0062 3.25004L0.00624951 2.75004L-0.00624951 3.74996Z" />
                 </svg>
               </button>
+              </Link>
             </div>
             <div className="border border-white border-opacity-50 p-4 lg:p-6 flex items-center justify-center bg-transparent hidden md:hidden lg:flex">
               <p className="text-center text-[#5F5F5F] font-gajraj text-sm md:text-lg lg:text-xl">
